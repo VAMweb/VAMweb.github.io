@@ -9,7 +9,7 @@ body {
 
 #header {
   overflow: hidden;
-  padding: 40px 10px;
+  padding: 20px 10px;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -31,11 +31,16 @@ body {
 }
 
 #header a.logo {
+  padding: 6px 10px;
   font-size: 50px;
   font-weight: bold;
   color: #6c0094;
   border-style: solid;
   border-width: thin;
+}
+
+#header img{
+  width: 150px;
 }
 
 #header a:hover {
@@ -232,4 +237,50 @@ span.psw {
   .cancelbtn {
      width: 100%;
   }
+}
+
+.sidebar{
+  height:100%;
+  width:200px;
+  position:fixed!important;
+  z-index:1;
+  overflow:auto;
+  border-right: 2px solid #6c6794;
+}
+
+.sb-icons{
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 150px 70px;
+}
+
+.sidebar a{
+  padding: 90px 0px;
+}
+
+.sidebar a:hover{
+  filter: drop-shadow(0px 0px 20px yellow) hue-rotate(160deg); 
+}
+
+.section1{
+  font-family: UniversLTStd;
+  padding: 0px 30px;
+}
+
+.section1 img{
+  float: left;
+  width: 400px;
+}
+
+.section1 p{
+  padding-left: 430px;
+  padding-top: 30px;
+  padding-right: 200px;
+  line-height: 1.6;
+}
+
+@font-face {
+  font-family: UniversLTStd;
+  src: url(fonts/UniversLTStd-Ex.otf);
 }
