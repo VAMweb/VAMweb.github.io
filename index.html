@@ -6,38 +6,25 @@
 	<title>Videojogos e Aplicações Multimédia</title>
 	<link rel="icon" href="ui/img/vam.ico">
 	<link rel="stylesheet" href="ui/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="ui/index.js" defer></script>
 </head>
 <body>
 	<div id="header">
 		<a href="" class="logo"><img src="ui/img/vam.png"></a>
 		<div class="header-right">
-	    	<a class="btn active" draggable="false" href="">Home</a>
-	    	<a class="btn" draggable="false" href="#projects">Projects</a>
-	    	<a class="btn" draggable="false" href="#news">News</a>
-	    	<a class="btn" draggable="false" href="#faq">FAQ</a>
-	    	<a class="btn" draggable="false" href="#contacts">Contacts</a>
+	    	<a class="btn active" draggable="false" href="">Início</a>
+	    	<a class="btn" draggable="false" href="#projects">Sobre nós</a>
+	    	<a class="btn" draggable="false" href="#news">Jogos</a>
+	    	<a class="btn" draggable="false" href="#faq">Artigos</a>
+	    	<a class="btn" draggable="false" href="#contacts">Multimédia</a>
 	    	<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>
 	    	<div class="search-container">
     			<form action="/action_page.php">
-      					<input type="text" placeholder="Search.." name="search">
+      					<input type="text" placeholder="" name="search">
+      					<i class="fa fa-search"></i>
     			</form>
   			</div>
-		</div>
-	</div>
-	<!-- Sidebar -->
-	<div class="sidebar">
-		<div class="sb-icons">
-			<a href="https://www.facebook.com/VAMULP"><img src="ui/img/fb.png"></a><br><br>
- 			<a href="https://www.youtube.com/channel/UC6kld1O_PUSw5Hv9Ft1knUQ"><img src="ui/img/yt.png"></a><br><br>
- 			<a href="https://www.instagram.com/vam_ulp/"><img src="ui/img/ig.png"></a>
-		</div>
- 		
-	</div>
-	<div style="margin-left:220px">
-		<div class="section1">
-			<img src="ui/img/img1.png">
-			<p>Come meet us and learn more about the course's experience and what to expect from learning with us!</p>
 		</div>
 	</div>
 
@@ -61,5 +48,24 @@
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     </div>
+  </form>
+</div>
+
+  <div id="content">	
+  	<div id="main">
+  		<h1>Vai um jogo rápido?</h1>
+  		<h5>Uma pequena introdução ao nosso curso e o que te espera</h5>
+  	</div>
+  	<div id="rotate0">
+  		<img src="ui/img/square.png" class="floating" id="square0">
+  	</div>
+  	<div id="rotate1">
+  		<img src="ui/img/square.png" class="floating" id="square1">
+  	</div>
+  	<div id="rotate2">
+  		<img src="ui/img/square.png" class="floating" id="square2">
+  	</div>
+  </div>
+
 </body>
 </html>

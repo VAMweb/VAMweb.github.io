@@ -3,13 +3,13 @@
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #07001b;
+  background-color: #333742;
   color: #463f73;
 }
 
 #header {
   overflow: hidden;
-  padding: 20px 10px;
+  padding: 0px 10px;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -17,17 +17,20 @@ body {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+  border-bottom: 1px solid #fff; 
+  padding-top: 10px;
 }
 
 #header a {
   float: left;
   text-align: center;
-  padding: 12px 20px;
+  padding: 0px 16px;
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
-  color: #ffd0fc;
+  color: #ffffff;
+  font-family: apercu_bold_pro;
 }
 
 #header a.logo {
@@ -35,8 +38,6 @@ body {
   font-size: 50px;
   font-weight: bold;
   color: #6c0094;
-  border-style: solid;
-  border-width: thin;
 }
 
 #header img{
@@ -49,12 +50,14 @@ body {
 }
 
 #header a.active {
-  border-left: 6px solid #6c0094;
-  height: 50px;
+  border-left: 6px solid #23d400;
+  padding-left: 4px;
 }
 
 .header-right {
   float: right;
+  padding-top: 45px;
+  padding-right: 20px;
 }
 
 @media screen and (max-width: 500px) {
@@ -71,16 +74,18 @@ body {
 
 #header .search-container {
   float: right;
+  position: relative;
+  top: -11px;
 }
 
 #header input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
+  padding: 0px;
+  margin-top: 12px;
   font-size: 17px;
   border: none;
   border-radius: 25px;
-  background-color: #6c6794;
-  color: #ffd0fc;
+  background-color: #4b4e57;
+  color: #ffffff;
 }
 
 #header ::placeholder{
@@ -119,11 +124,10 @@ body {
   }
 }
 
-body {font-family: Arial, Helvetica, sans-serif;}
+body {font-family: apercu_bold_pro;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -264,7 +268,7 @@ span.psw {
 }
 
 .section1{
-  font-family: UniversLTStd;
+  font-family: apercu_bold_pro;
   padding: 0px 30px;
 }
 
@@ -281,6 +285,82 @@ span.psw {
 }
 
 @font-face {
-  font-family: UniversLTStd;
-  src: url(fonts/UniversLTStd-Ex.otf);
+  font-family: apercu_bold_pro;
+  src: url(fonts/apercu_bold_pro.otf);
+}
+
+.fa{
+  color: #23d400;
+  padding-left: 4px;
+}
+
+#content{
+  padding-top: 100px;
+}
+
+#main{
+  text-align: center;
+}
+
+#main h1{
+  padding-top: 150px;
+  color: #fff;
+  font-size: 100px;
+  line-height: 0.2;
+}
+
+#main h5{
+  color: #85878e;
+  font-size: 30px;
+}
+
+#rotate1{
+  transform: rotate(35deg);
+  position: absolute;
+}
+#rotate0{
+  transform: rotate(0deg);
+  position: absolute;
+}
+#rotate2{
+  transform: rotate(115deg);
+  position: absolute;
+}
+
+.floating { 
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+#square0{
+  width: 100px;
+  left: 200px;
+  top: 20px;
+  position: absolute;
+}
+
+#square1{
+  filter: brightness(0) invert(1);
+  width: 70px;
+  left: 200px;
+  top: 100px;
+  position: absolute;
+}
+
+#square2{
+  filter: grayscale(100%);
+  width: 40px;
+  left: -150px;
+  top: -72px;
+  position: absolute;
 }
