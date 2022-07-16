@@ -5,6 +5,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #333742;
   color: #463f73;
+  max-width: 100%; 
+  overflow-x: hidden;
 }
 
 #header {
@@ -137,16 +139,22 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
   color: white;
-  padding: 14px 20px;
+  padding: 12px 20px;
   margin: 8px 0;
-  border: none;
+  background-color: #333742;
+  font-family: apercu_bold_pro;
+  border: 1px solid #fff;
   cursor: pointer;
+  transition: all 0.3s;
+  font-size: 15px;
 }
 
 button:hover {
-  opacity: 0.8;
+  opacity: 0.4;
+  padding: 14px 22px;
+  margin: 10px 0;
+  font-size: 17px;
 }
 
 /* Extra styles for the cancel button */
@@ -295,7 +303,7 @@ span.psw {
 }
 
 #content{
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 #main{
@@ -312,10 +320,11 @@ span.psw {
 #main h5{
   color: #85878e;
   font-size: 30px;
+  
 }
 
 #rotate1{
-  transform: rotate(35deg);
+  transform: rotate(45deg);
   position: absolute;
 }
 #rotate0{
@@ -326,10 +335,74 @@ span.psw {
   transform: rotate(115deg);
   position: absolute;
 }
+#rotate3{
+  transform: rotate(337deg);
+  position: absolute;
+  right:0;
+}
+#rotate4{
+  transform: rotate(180deg);
+  position: absolute;
+  right:0;
+}
+#rotate5{
+  transform: rotate(210deg);
+  position: absolute;
+  right:0;
+}
+#rotate6{
+  transform: rotate(0deg);
+  position: absolute;
+  right:0;
+}
+#rotate7{
+  transform: rotate(300deg);
+  position: absolute;
+  right:0;
+}
+#rotate8{
+  transform: rotate(264deg);
+  position: absolute;
+  right:0;
+}
+#rotate9{
+  transform: rotate(300deg);
+  position: absolute;
+}
+#rotate10{
+  transform: rotate(345deg);
+  position: absolute;
+}
+#rotate11,#rotate12,#rotate13,#rotate14,#rotate15,#rotate16,#rotate17{
+  position: absolute;
+}
+
+#rotate15,#rotate16,#rotate17{
+  right:0;
+}
+
 
 .floating { 
     animation-name: floating;
     animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.floating1 { 
+    animation-name: floating1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.floating2 { 
+    animation-name: floating2;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 30px;
@@ -342,18 +415,31 @@ span.psw {
     100%   { transform: translate(0, -0px); }   
 }
 
+@keyframes floating1 {
+    0% { transform: translate(30px,  0px); }
+    33%  { transform: translate(15px, 30px); }
+    66%  { transform: translate(0px, -30px); }
+    100%   { transform: translate(30px, -0px); }   
+}
+
+@keyframes floating2 {
+    0% { transform: translate(0,  0px) rotate(0deg); }
+    50%  { transform: translate(0, 15px) rotate(180deg); }
+    100%   { transform: translate(0, -0px) rotate(360deg); }   
+}
+
 #square0{
-  width: 100px;
-  left: 200px;
-  top: 20px;
+  width: 80px;
+  left: 230px;
+  top: 35px;
   position: absolute;
 }
 
 #square1{
   filter: brightness(0) invert(1);
   width: 70px;
-  left: 200px;
-  top: 100px;
+  left: 150px;
+  top: 30px;
   position: absolute;
 }
 
@@ -362,5 +448,121 @@ span.psw {
   width: 40px;
   left: -150px;
   top: -72px;
+  position: absolute;
+}
+
+#square3{
+  filter: brightness(0) invert(1);
+  width: 120px;
+  left: -76px;
+  top: -362px;
+  position: absolute;
+}
+
+#square4{
+  filter: grayscale(100%);
+  width: 90px;
+  left: 100px;
+  top: -200px;
+  position: absolute;
+}
+
+#square5{
+  width: 30px;
+  left: 150px;
+  top: -200px;
+  position: absolute;
+}
+
+#triangle0{
+  filter: brightness(0) invert(1);
+  width: 76px;
+  left: -408px;
+  top: 120px;
+  position: absolute;
+}
+
+#triangle1{
+  width: 35px;
+  left: 10px;
+  top: -330px;
+  position: absolute;
+}
+
+#triangle2{
+  filter: grayscale(100%);
+  width: 60px;
+  left: -130px;
+  top: -109px;
+  position: absolute;
+}
+
+#triangle3{
+  filter: brightness(0) invert(1);
+  width: 20px;
+  left: -41px;
+  top: 187px;
+  position: absolute;
+}
+
+#triangle4{
+  filter: grayscale(100%);
+  width: 50px;
+  left: 158px;
+  top: -158px;
+  position: absolute;
+}
+
+#x0{
+  width: 20px;
+  left: 211px;
+  top: -262px;
+  position: absolute;
+}
+
+#x1{
+  filter: brightness(0) invert(1);
+  width: 60px;
+  left: 32px;
+  top: -324px;
+  position: absolute;
+}
+
+#x2{
+  filter: grayscale(100%);
+  width: 30px;
+  left: 92px;
+  top: -20px;
+  position: absolute;
+}
+
+#x3{
+  filter: grayscale(100%);
+  width: 60px;
+  left: 201px;
+  top: 165px;
+  position: absolute;
+}
+
+#x4{
+  filter: brightness(0) invert(1);
+  width: 20px;
+  left: -365px;
+  top: -26px;
+  position: absolute;
+}
+
+#x5{
+  filter: grayscale(100%);
+  width: 40px;
+  left: -257px;
+  top: -142px;
+  position: absolute;
+}
+
+#x6{
+  width: 60px;
+  left: -137px;
+  top: -91px;
   position: absolute;
 }
