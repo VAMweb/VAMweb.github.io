@@ -21,6 +21,11 @@ body {
                                   supported by Chrome, Edge, Opera and Firefox */
   border-bottom: 1px solid #fff; 
   padding-top: 10px;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: #333742;
+  width: 100%;
 }
 
 #header a {
@@ -52,8 +57,7 @@ body {
 }
 
 #header a.active {
-  border-left: 6px solid #23d400;
-  padding-left: 4px;
+  color: #23d400;
 }
 
 .header-right {
@@ -300,10 +304,6 @@ span.psw {
 .fa{
   color: #23d400;
   padding-left: 4px;
-}
-
-#content{
-  padding-top: 50px;
 }
 
 #main{
