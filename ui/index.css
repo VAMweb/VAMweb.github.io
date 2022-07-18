@@ -189,7 +189,7 @@ span.psw {
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 3; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -373,13 +373,47 @@ span.psw {
   transform: rotate(345deg);
   position: absolute;
 }
-#rotate11,#rotate12,#rotate13,#rotate14,#rotate15,#rotate16,#rotate17{
+#rotate11,#rotate12,#rotate13,#rotate14,#rotate15,#rotate16,#rotate17,#rotate18,#rotate19,#rotate20,#rotate21,#rotate28,#rotate29,#rotate30,#rotate31,#rotate32{
   position: absolute;
 }
 
-#rotate15,#rotate16,#rotate17{
+#rotate15,#rotate16,#rotate17,#rotate20,#rotate21,#rotate31,#rotate32{
   right:0;
 }
+
+#rotate22{
+  transform: rotate(355deg);
+  position: absolute;
+}
+
+#rotate23{
+  transform: rotate(62deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate24{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate25{
+  transform: rotate(355deg);
+  position: absolute;
+}
+
+#rotate26{
+  transform: rotate(311deg);
+  position: absolute;
+}
+
+#rotate27{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
 
 
 .floating { 
@@ -408,6 +442,15 @@ span.psw {
     margin-left: 30px;
     margin-top: 5px;
 }
+
+.floating3 { 
+    animation-name: floating3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
  
 @keyframes floating {
     0% { transform: translate(0,  0px); }
@@ -426,6 +469,12 @@ span.psw {
     0% { transform: translate(0,  0px) rotate(0deg); }
     50%  { transform: translate(0, 15px) rotate(180deg); }
     100%   { transform: translate(0, -0px) rotate(360deg); }   
+}
+
+@keyframes floating3 {
+    0% { transform: translate(-0,  -0px); }
+    50%  { transform: translate(-0, -15px); }
+    100%   { transform: translate(-0, 0px); }   
 }
 
 #square0{
@@ -564,5 +613,151 @@ span.psw {
   width: 60px;
   left: -137px;
   top: -91px;
+  position: absolute;
+}
+
+#circle0{
+  width: 40px;
+  left: 21px;
+  top: 82px;
+  position: absolute;
+}
+
+#circle1{
+  filter: brightness(0) invert(1);
+  width: 50px;
+  left: 181px;
+  top: -62px;
+  position: absolute;
+}
+
+#circle2{
+  filter: brightness(0) invert(1);
+  width: 20px;
+  left: -171px;
+  top: -132px;
+  position: absolute;
+}
+
+#circle3{
+  filter: grayscale(100%);
+  width: 80px;
+  left: -241px;
+  top: -42px;
+  position: absolute;
+}
+
+section{
+  padding-bottom: 400px;
+}
+
+#sobrenosimg{
+  width: 700px;
+  position: absolute;
+}
+
+#sobretxt{
+  color: white;
+  background-color: #60636c;
+  padding: 10px;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  right: 0;
+  width: 1000px;
+  position: absolute;
+  padding-left: 30px;
+  z-index: 2;
+}
+
+#triangle5{
+  filter: grayscale(100%);
+  width: 70px;
+  left: 70px;
+  top: -80px;
+  position: absolute;
+}
+
+#triangle6{
+  filter: brightness(0) invert(1);
+  width: 70px;
+  left: -561px;
+  top: 835px;
+  position: absolute;
+}
+
+#triangle7{
+  width: 40px;
+  left: -238px;
+  top: -52px;
+  position: absolute;
+}
+
+#square6{
+  filter: brightness(0) invert(1);
+  width: 50px;
+  left: 218px;
+  top: -12px;
+  position: absolute;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#square7{
+  filter: brightness(0) invert(1);
+  width: 30px;
+  left: -223px;
+  top: 376px;
+  position: absolute;
+}
+
+#square8{
+  width: 60px;
+  left: -773px;
+  top: 376px;
+  position: absolute;
+}
+
+#circle4{
+  width: 60px;
+  left: 421px;
+  top: 44px;
+  position: absolute;
+}
+
+#circle5{
+  filter: brightness(0) invert(1);
+  width: 40px;
+  left: 581px;
+  top: 194px;
+  position: absolute;
+}
+
+#x7{
+  filter: grayscale(100%);
+  width: 40px;
+  left: 67px;
+  top: 355px;
+  position: absolute;
+}
+
+#x8{
+  filter: brightness(0) invert(1);
+  width: 120px;
+  left: -331px;
+  top: 317px;
+  position: absolute;
+}
+
+#x9{
+  filter: brightness(0) invert(1);
+  width: 40px;
+  left: -1083px;
+  top: 279px;
   position: absolute;
 }
