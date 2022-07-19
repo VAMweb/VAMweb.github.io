@@ -11,7 +11,7 @@ body {
 
 #header {
   overflow: hidden;
-  padding: 0px 10px;
+  padding: 0vw 0.417vw;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
      -khtml-user-select: none; /* Konqueror HTML */
@@ -19,8 +19,8 @@ body {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-  border-bottom: 1px solid #fff; 
-  padding-top: 10px;
+  border-bottom: 0.042vw solid #fff; 
+  padding-top: 0.417vw;
   top: 0;
   position: fixed;
   z-index: 10;
@@ -31,24 +31,24 @@ body {
 #header a {
   float: left;
   text-align: center;
-  padding: 0px 16px;
+  padding: 0vw 0.667vw;
   text-decoration: none;
-  font-size: 18px; 
-  line-height: 25px;
-  border-radius: 4px;
+  font-size: 0.750vw; 
+  line-height: 1.042vw;
+  border-radius: 0.167vw;
   color: #ffffff;
   font-family: apercu_bold_pro;
 }
 
 #header a.logo {
-  padding: 6px 10px;
-  font-size: 50px;
+  padding: 6px 0.417vw;
+  font-size: 2.083vw;
   font-weight: bold;
   color: #6c0094;
 }
 
 #header img{
-  width: 150px;
+  width: 6.250vw;
 }
 
 #header a:hover {
@@ -62,8 +62,8 @@ body {
 
 .header-right {
   float: right;
-  padding-top: 45px;
-  padding-right: 20px;
+  padding-top: 1.875vw;
+  padding-right: 0.833vw;
 }
 
 @media screen and (max-width: 500px) {
@@ -81,15 +81,15 @@ body {
 #header .search-container {
   float: right;
   position: relative;
-  top: -11px;
+  top: -0.458vw;
 }
 
 #header input[type=text] {
-  padding: 0px;
-  margin-top: 12px;
-  font-size: 17px;
+  padding: 0vw;
+  margin-top: 0.500vw;
+  font-size: 0.708vw;
   border: none;
-  border-radius: 25px;
+  border-radius: 1.042vw;
   background-color: #4b4e57;
   color: #ffffff;
 }
@@ -100,11 +100,11 @@ body {
 
 #header .search-container button {
   float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
+  padding: 6px 0.417vw;
+  margin-top: 0.333vw;
+  margin-right: 0.667vw;
   background: #ddd;
-  font-size: 17px;
+  font-size: 0.708vw;
   border: none;
   cursor: pointer;
 }
@@ -123,10 +123,10 @@ body {
     text-align: left;
     width: 100%;
     margin: 0;
-    padding: 14px;
+    padding: 0.583vw;
   }
   #header input[type=text] {
-    border: 1px solid #ccc;  
+    border: 0.042vw solid #ccc;  
   }
 }
 
@@ -134,44 +134,44 @@ body {font-family: apercu_bold_pro;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 0.500vw 0.833vw;
+  margin: 0.333vw 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 0.042vw solid #ccc;
   box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 button {
   color: white;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 0.500vw 0.833vw;
+  margin: 0.333vw 0;
   background-color: #333742;
   font-family: apercu_bold_pro;
-  border: 1px solid #fff;
+  border: 0.042vw solid #fff;
   cursor: pointer;
   transition: all 0.3s;
-  font-size: 15px;
+  font-size: 1vw;
 }
 
 button:hover {
   opacity: 0.4;
-  padding: 14px 22px;
-  margin: 10px 0;
-  font-size: 17px;
+  padding: 0.583vw 0.917vw;
+  margin: 0.417vw 0;
+  font-size: 1.108vw;
 }
 
 /* Extra styles for the cancel button */
 .cancelbtn {
   width: auto;
-  padding: 10px 18px;
+  padding: 0.417vw 0.750vw;
   background-color: #f44336;
 }
 
 /* Center the image and position the close button */
 .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  margin: 1vw 0 0.500vw 0;
   position: relative;
 }
 
@@ -181,12 +181,12 @@ img.avatar {
 }
 
 .container {
-  padding: 16px;
+  padding: 0.667vw;
 }
 
 span.psw {
   float: right;
-  padding-top: 16px;
+  padding-top: 0.667vw;
 }
 
 /* The Modal (background) */
@@ -201,24 +201,24 @@ span.psw {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
+  padding-top: 2.500vw;
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
+  border: 0.042vw solid #888;
   width: 40%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */
 .close {
   position: absolute;
-  right: 25px;
+  right: 1.042vw;
   top: 0;
   color: #000;
-  font-size: 35px;
+  font-size: 1.458vw;
   font-weight: bold;
 }
 
@@ -245,7 +245,7 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 12.500vw) {
   span.psw {
      display: block;
      float: none;
@@ -257,42 +257,42 @@ span.psw {
 
 .sidebar{
   height:100%;
-  width:200px;
+  width:8.333vw;
   position:fixed!important;
   z-index:1;
   overflow:auto;
-  border-right: 2px solid #6c6794;
+  border-right: 0.083vw solid #6c6794;
 }
 
 .sb-icons{
   position: absolute;
     left: 0;
     bottom: 0;
-    padding: 150px 70px;
+    padding: 6.250vw 2.917vw;
 }
 
 .sidebar a{
-  padding: 90px 0px;
+  padding: 3.750vw 0vw;
 }
 
 .sidebar a:hover{
-  filter: drop-shadow(0px 0px 20px yellow) hue-rotate(160deg); 
+  filter: drop-shadow(0vw 0vw 0.833vw yellow) hue-rotate(160deg); 
 }
 
 .section1{
   font-family: apercu_bold_pro;
-  padding: 0px 30px;
+  padding: 0vw 1.250vw;
 }
 
 .section1 img{
   float: left;
-  width: 400px;
+  width: 16.667vw;
 }
 
 .section1 p{
-  padding-left: 430px;
-  padding-top: 30px;
-  padding-right: 200px;
+  padding-left: 17.917vw;
+  padding-top: 1.250vw;
+  padding-right: 8.333vw;
   line-height: 1.6;
 }
 
@@ -303,7 +303,7 @@ span.psw {
 
 .fa{
   color: #23d400;
-  padding-left: 4px;
+  padding-left: 0.167vw;
 }
 
 #main{
@@ -311,16 +311,24 @@ span.psw {
 }
 
 #main h1{
-  padding-top: 150px;
+  position: relative;
+  padding-top: 5.250vw;
   color: #fff;
-  font-size: 100px;
+  font-size: 5.167vw;
   line-height: 0.2;
+  z-index: 2;
 }
 
 #main h5{
+  position: relative;
   color: #85878e;
-  font-size: 30px;
-  
+  font-size: 1.550vw;
+  z-index: 2;
+}
+
+#main button{
+  position: relative;
+  z-index: 2;
 }
 
 #rotate1{
@@ -421,8 +429,9 @@ span.psw {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+    margin-left: 1.250vw;
+    margin-top: 0.208vw;
+    z-index: 0;
 }
 
 .floating1 { 
@@ -430,8 +439,9 @@ span.psw {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+    margin-left: 1.250vw;
+    margin-top: 0.208vw;
+    z-index: 0;
 }
 
 .floating2 { 
@@ -439,8 +449,9 @@ span.psw {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+    margin-left: 1.250vw;
+    margin-top: 0.208vw;
+    z-index: 0;
 }
 
 .floating3 { 
@@ -448,255 +459,257 @@ span.psw {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
+    margin-left: 1.250vw;
+    margin-top: 0.208vw;
+    z-index: 0;
 }
  
 @keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0, 15px); }
-    100%   { transform: translate(0, -0px); }   
+    0% { transform: translate(0,  0vw); }
+    50%  { transform: translate(0, 0.625vw); }
+    100%   { transform: translate(0, -0vw); }   
 }
 
 @keyframes floating1 {
-    0% { transform: translate(30px,  0px); }
-    33%  { transform: translate(15px, 30px); }
-    66%  { transform: translate(0px, -30px); }
-    100%   { transform: translate(30px, -0px); }   
+    0% { transform: translate(1.250vw,  0vw); }
+    33%  { transform: translate(0.625vw, 1.250vw); }
+    66%  { transform: translate(0vw, -1.250vw); }
+    100%   { transform: translate(1.250vw, -0vw); }   
 }
 
 @keyframes floating2 {
-    0% { transform: translate(0,  0px) rotate(0deg); }
-    50%  { transform: translate(0, 15px) rotate(180deg); }
-    100%   { transform: translate(0, -0px) rotate(360deg); }   
+    0% { transform: translate(0,  0vw) rotate(0deg); }
+    50%  { transform: translate(0, 0.625vw) rotate(180deg); }
+    100%   { transform: translate(0, -0vw) rotate(360deg); }   
 }
 
 @keyframes floating3 {
-    0% { transform: translate(-0,  -0px); }
-    50%  { transform: translate(-0, -15px); }
-    100%   { transform: translate(-0, 0px); }   
+    0% { transform: translate(-0,  -0vw); }
+    50%  { transform: translate(-0, -0.625vw); }
+    100%   { transform: translate(-0, 0vw); }   
 }
 
 #square0{
-  width: 80px;
-  left: 230px;
-  top: 35px;
+  width: 3.333vw;
+  left: 9.583vw;
+  top: 1.458vw;
   position: absolute;
 }
 
 #square1{
   filter: brightness(0) invert(1);
-  width: 70px;
-  left: 150px;
-  top: 30px;
+  width: 2.917vw;
+  left: 6.250vw;
+  top: 1.250vw;
   position: absolute;
 }
 
 #square2{
   filter: grayscale(100%);
-  width: 40px;
-  left: -150px;
-  top: -72px;
+  width: 1.667vw;
+  left: -6.250vw;
+  top: -3vw;
   position: absolute;
 }
 
 #square3{
   filter: brightness(0) invert(1);
-  width: 120px;
-  left: -76px;
-  top: -362px;
+  width: 5vw;
+  left: -3.167vw;
+  top: -15.083vw;
   position: absolute;
 }
 
 #square4{
   filter: grayscale(100%);
-  width: 90px;
-  left: 100px;
-  top: -200px;
+  width: 3.750vw;
+  left: 4.167vw;
+  top: -8.333vw;
   position: absolute;
 }
 
 #square5{
-  width: 30px;
-  left: 150px;
-  top: -200px;
+  width: 1.250vw;
+  left: 6.250vw;
+  top: -8.333vw;
   position: absolute;
 }
 
 #triangle0{
   filter: brightness(0) invert(1);
-  width: 76px;
-  left: -408px;
-  top: 120px;
+  width: 3.167vw;
+  left: -17vw;
+  top: 5vw;
   position: absolute;
 }
 
 #triangle1{
-  width: 35px;
-  left: 10px;
-  top: -330px;
+  width: 1.458vw;
+  left: 0.417vw;
+  top: -13.750vw;
   position: absolute;
 }
 
 #triangle2{
   filter: grayscale(100%);
-  width: 60px;
-  left: -130px;
-  top: -109px;
+  width: 2.500vw;
+  left: -5.417vw;
+  top: -4.542vw;
   position: absolute;
 }
 
 #triangle3{
   filter: brightness(0) invert(1);
-  width: 20px;
-  left: -41px;
-  top: 187px;
+  width: 0.833vw;
+  left: -1.708vw;
+  top: 7.792vw;
   position: absolute;
 }
 
 #triangle4{
   filter: grayscale(100%);
-  width: 50px;
-  left: 158px;
-  top: -158px;
+  width: 2.083vw;
+  left: 6.583vw;
+  top: -6.583vw;
   position: absolute;
 }
 
 #x0{
-  width: 20px;
-  left: 211px;
-  top: -262px;
+  width: 0.833vw;
+  left: 8.792vw;
+  top: -10.917vw;
   position: absolute;
 }
 
 #x1{
   filter: brightness(0) invert(1);
-  width: 60px;
-  left: 32px;
-  top: -324px;
+  width: 2.500vw;
+  left: 1.333vw;
+  top: -13.500vw;
   position: absolute;
 }
 
 #x2{
   filter: grayscale(100%);
-  width: 30px;
-  left: 92px;
-  top: -20px;
+  width: 1.250vw;
+  left: 3.833vw;
+  top: -0.833vw;
   position: absolute;
 }
 
 #x3{
   filter: grayscale(100%);
-  width: 60px;
-  left: 201px;
-  top: 165px;
+  width: 2.500vw;
+  left: 8.375vw;
+  top: 6.875vw;
   position: absolute;
 }
 
 #x4{
   filter: brightness(0) invert(1);
-  width: 20px;
-  left: -365px;
-  top: -26px;
+  width: 0.833vw;
+  left: -15.208vw;
+  top: -1.083vw;
   position: absolute;
 }
 
 #x5{
   filter: grayscale(100%);
-  width: 40px;
-  left: -257px;
-  top: -142px;
+  width: 1.667vw;
+  left: -10.708vw;
+  top: -5.917vw;
   position: absolute;
 }
 
 #x6{
-  width: 60px;
-  left: -137px;
-  top: -91px;
+  width: 2.500vw;
+  left: -5.708vw;
+  top: -3.792vw;
   position: absolute;
 }
 
 #circle0{
-  width: 40px;
-  left: 21px;
-  top: 82px;
+  width: 1.667vw;
+  left: 0.875vw;
+  top: 3.417vw;
   position: absolute;
 }
 
 #circle1{
   filter: brightness(0) invert(1);
-  width: 50px;
-  left: 181px;
-  top: -62px;
+  width: 2.083vw;
+  left: 7.542vw;
+  top: -2.583vw;
   position: absolute;
 }
 
 #circle2{
   filter: brightness(0) invert(1);
-  width: 20px;
-  left: -171px;
-  top: -132px;
+  width: 0.833vw;
+  left: -7.125vw;
+  top: -5.500vw;
   position: absolute;
 }
 
 #circle3{
   filter: grayscale(100%);
-  width: 80px;
-  left: -241px;
-  top: -42px;
+  width: 3.333vw;
+  left: -10.042vw;
+  top: -1.750vw;
   position: absolute;
 }
 
 section{
-  padding-bottom: 400px;
+  padding-bottom: 16.667vw;
 }
 
 #sobrenosimg{
-  width: 700px;
+  width: 40%;
   position: absolute;
 }
 
 #sobretxt{
   color: white;
   background-color: #60636c;
-  padding: 10px;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
+  padding: 0.417vw;
+  border-bottom-left-radius: 2.083vw;
+  border-top-left-radius: 2.083vw;
   right: 0;
-  width: 1000px;
+  width: 40%;
   position: absolute;
-  padding-left: 30px;
+  padding-left: 1.250vw;
+  font-size: 0.8vw;
   z-index: 2;
 }
 
 #triangle5{
   filter: grayscale(100%);
-  width: 70px;
-  left: 70px;
-  top: -80px;
+  width: 2.917vw;
+  left: 2.917vw;
+  top: -3.333vw;
   position: absolute;
 }
 
 #triangle6{
   filter: brightness(0) invert(1);
-  width: 70px;
-  left: -561px;
-  top: 835px;
+  width: 2.917vw;
+  left: -23.375vw;
+  top: 34.792vw;
   position: absolute;
 }
 
 #triangle7{
-  width: 40px;
-  left: -238px;
-  top: -52px;
+  width: 1.667vw;
+  left: -9.917vw;
+  top: -2.167vw;
   position: absolute;
 }
 
 #square6{
   filter: brightness(0) invert(1);
-  width: 50px;
-  left: 218px;
-  top: -12px;
+  width: 2.083vw;
+  left: 9.083vw;
+  top: -0.500vw;
   position: absolute;
 }
 
@@ -710,54 +723,54 @@ img {
 
 #square7{
   filter: brightness(0) invert(1);
-  width: 30px;
-  left: -223px;
-  top: 376px;
+  width: 1.250vw;
+  left: -9.292vw;
+  top: 24.667vw;
   position: absolute;
 }
 
 #square8{
-  width: 60px;
-  left: -773px;
-  top: 376px;
+  width: 2.500vw;
+  left: -32.208vw;
+  top: 19.667vw;
   position: absolute;
 }
 
 #circle4{
-  width: 60px;
-  left: 421px;
-  top: 44px;
+  width: 2.500vw;
+  left: 23.542vw;
+  top: 1.833vw;
   position: absolute;
 }
 
 #circle5{
   filter: brightness(0) invert(1);
-  width: 40px;
-  left: 581px;
-  top: 194px;
+  width: 1.667vw;
+  left: 30.208vw;
+  top: 8.083vw;
   position: absolute;
 }
 
 #x7{
   filter: grayscale(100%);
-  width: 40px;
-  left: 67px;
-  top: 355px;
+  width: 1.667vw;
+  left: 8.792vw;
+  top: 21.792vw;
   position: absolute;
 }
 
 #x8{
   filter: brightness(0) invert(1);
-  width: 120px;
-  left: -331px;
-  top: 317px;
+  width: 5vw;
+  left: -13.792vw;
+  top: 18.208vw;
   position: absolute;
 }
 
 #x9{
   filter: brightness(0) invert(1);
-  width: 40px;
-  left: -1083px;
-  top: 279px;
+  width: 1.667vw;
+  left: -45.125vw;
+  top: 11.625vw;
   position: absolute;
 }
