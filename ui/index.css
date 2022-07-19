@@ -33,7 +33,7 @@ body {
   text-align: center;
   padding: 0vw 0.667vw;
   text-decoration: none;
-  font-size: 0.750vw; 
+  font-size: 1.3vw; 
   line-height: 1.042vw;
   border-radius: 0.167vw;
   color: #ffffff;
@@ -48,7 +48,11 @@ body {
 }
 
 #header img{
-  width: 6.250vw;
+  width: 7vw;
+}
+
+.fa{
+  font: normal normal normal 1.2vw/1 FontAwesome !important;
 }
 
 #header a:hover {
@@ -86,8 +90,8 @@ body {
 
 #header input[type=text] {
   padding: 0vw;
-  margin-top: 0.500vw;
-  font-size: 0.708vw;
+  margin-top: 0.1vw;
+  font-size: 1.3vw;
   border: none;
   border-radius: 1.042vw;
   background-color: #4b4e57;
@@ -675,10 +679,12 @@ section{
   border-bottom-left-radius: 2.083vw;
   border-top-left-radius: 2.083vw;
   right: 0;
-  width: 40%;
+  width: 50%;
   position: absolute;
-  padding-left: 1.250vw;
-  font-size: 0.8vw;
+  padding-left: 6.250vw;
+  padding-right: 6.250vw;
+  font-size: 0.9vw;
+  text-align: justify;
   z-index: 2;
 }
 
@@ -693,8 +699,8 @@ section{
 #triangle6{
   filter: brightness(0) invert(1);
   width: 2.917vw;
-  left: -23.375vw;
-  top: 34.792vw;
+  left: -28.375vw;
+  top: 43.792vw;
   position: absolute;
 }
 
@@ -731,8 +737,8 @@ img {
 
 #square8{
   width: 2.500vw;
-  left: -32.208vw;
-  top: 19.667vw;
+  left: -40.208vw;
+  top: 22.667vw;
   position: absolute;
 }
 
@@ -763,14 +769,14 @@ img {
   filter: brightness(0) invert(1);
   width: 5vw;
   left: -13.792vw;
-  top: 18.208vw;
+  top: 21.208vw;
   position: absolute;
 }
 
 #x9{
   filter: brightness(0) invert(1);
   width: 1.667vw;
-  left: -45.125vw;
+  left: -55.125vw;
   top: 11.625vw;
   position: absolute;
 }
