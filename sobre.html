@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Videojogos e Aplicações Multimédia</title>
+	<link rel="icon" href="ui/img/vam.ico">
+	<link rel="stylesheet" href="ui/index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="ui/index.js" defer></script>
+</head>
+<body>
+	<div id="header">
+		<a href="" class="logo"><img src="ui/img/vam.png" draggable="false"></a>
+		<div class="header-right">
+	    	<a class="btn" draggable="false" href="index.html">Início</a>
+	    	<a class="btn active" draggable="false" href="sobre.html">Sobre</a>
+	    	<a class="btn" draggable="false" href="#jogos">Jogos</a>
+	    	<a class="btn" draggable="false" href="#artigos">Artigos</a>
+	    	<a class="btn" draggable="false" href="#multimedia">Multimédia</a>
+	    	<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>
+	    	<div class="search-container">
+    			<form action="/action_page.php">
+      					<input type="text" placeholder="" name="search">
+      					<i class="fa fa-search"></i>
+    			</form>
+  			</div>
+		</div>
+	</div>
+
+	<div id="id01" class="modal">
+  
+  	<form class="modal-content animate" action="/action_page.php" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+  <div id="contentsobre">
+  	<img src="ui/img/sobre.png" draggable="false" id="sobre">
+  	<img src="ui/img/condicoes.png" draggable="false" id="condicoes">
+  	<h1 id="condicoestxt">Condições de Ingresso</h1>
+  	<div id="txt1">
+  		<p>Podem candidatar-se à Licenciatura em Videojogos e Aplicações Multimédia da Universidade Lusófona do Porto os candidatos que apresentem candidatura através do concurso institucional de acesso e tenham aprovação a uma das seguintes provas de ingresso:
+  		<br>&emsp;&emsp;&emsp;&emsp;→Geometria Descritiva Matemática
+	  	<br>&emsp;&emsp;&emsp;&emsp;→Matemática
+		  <br>&emsp;&emsp;&emsp;&emsp;→Português</p>
+		  <p>Os candidatos podem ainda ingressar através dos regimes de mudança de par instituição/curso ou através de um Concurso Especial, de acordo com as normas legals em vigor (titulares de curso superior, titulares de Curso de Especialização Tecnológica, titulares de Curso Técnico Superior Profissional ou Malores de 23 anos). Podem ainda ingressar os candidatos que reúnam as condições previstas no Estatuto do Estudante Internacional.</p>
+  	</div>
+  	<img src="ui/img/conhecimentos.png" draggable="false" id="conhecimentos">
+  	<h1 id="conhecimentostxt">Conhecimentos, Capacidades e Competências a Adquirir</h1>
+  	<div id="txt2">
+  		<p>- Desenvolver documentos de game design e flowcharts para aplicações multimédia.<br> - Desenvolver mockups e protótipos de videojogos e aplicações multimédia.<br> - Fomentar o trabalho de equipa necessário nos processos de pré-produção e produção de videojogos e aplicacões multimédia.<br> - Conceber e produzir jogos compreendendo todo o processo de produção como forma de criação autónoma ou de conveniente divisão de tarefas em equipas.<br> - Ilustração, animação e Interatividade em ambientes gráficos 2D e 3D.<br> - Programação para diferentes dispositivos. - Pensamento crítico e analítico relativo a artefactos interativos.<br> - Gestão e conceção de projetos.<br> - Técnicas de promoção e distribuição de videojogos e aplicações multimédia como produtos utilitários e de entretenimento.</p>
+  	</div>
+  	<img src="ui/img/estudos.png" draggable="false" id="estudos">
+  	<h1 id="estudostxt">Estudos Futuros</h1>
+  	<div id="txt3">
+  		<p>A Licenciatura em Videojogos e Aplicações Multimédia abre caminho para a especialização em estudos futuros de Mestrado e Doutora mento nos campos das indústrias criativas, artes digitais e interativas e tecnologias seja na própria faculdade ou noutras instituições de ensino.</p>
+  	</div>
+  </div>
+
+</body>
+</html>

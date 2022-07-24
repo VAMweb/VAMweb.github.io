@@ -780,3 +780,72 @@ img {
   top: 11.625vw;
   position: absolute;
 }
+
+#condicoes{
+  position: absolute;
+  width: 30vw;
+  top: 14.625vw;
+  left: 2.625vw;
+}
+
+#sobre{
+  position: absolute;
+  width: 20vw;
+  top: 6.625vw;
+  left: 40%
+}
+
+#condicoestxt,#conhecimentostxt,#estudostxt{
+  position: absolute;
+  top: 15.5vw;
+  left: 7vw;
+  font-size: 2vw;
+  color: white;
+}
+
+#txt1,#txt2,#txt3{
+  color: white;
+  border-left: 0.3vw solid #23d400;
+  position: absolute;
+  font-size: 1vw;
+  text-align: justify;
+  top: 21vw;
+  left: 3vw;
+  padding: 1vw;
+  border-radius: 0.3vw;
+  padding-right: 10vw;
+}
+
+#conhecimentos{
+  position: absolute;
+  width: 61vw;
+  top: 40.625vw;
+  left: 2.625vw;
+}
+
+#conhecimentostxt{
+  top: 41.5vw;
+}
+
+#estudos{
+  position: absolute;
+  width: 24vw;
+  top: 62.625vw;
+  left: 2.625vw;
+}
+
+#estudostxt{
+  top: 63.5vw;
+}
+
+#txt2{
+  top: 47vw;
+}
+
+#txt3{
+  top: 69vw;
+}
+
+#contentsobre{
+  padding-bottom: 90vw;
+}
