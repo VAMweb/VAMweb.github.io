@@ -37,13 +37,12 @@ body {
   line-height: 1.042vw;
   border-radius: 0.167vw;
   color: #ffffff;
-  font-family: apercu_bold_pro;
+  font-family: apercu_regular_pro;
 }
 
 #header a.logo {
   padding: 6px 0.417vw;
   font-size: 2.083vw;
-  font-weight: bold;
   color: #6c0094;
 }
 
@@ -57,7 +56,7 @@ body {
 
 #header a:hover {
   color: white;
-  font-weight: bold;
+  font-family: apercu_bold_pro;
 }
 
 #header a.active {
@@ -303,6 +302,11 @@ span.psw {
 @font-face {
   font-family: apercu_bold_pro;
   src: url(fonts/apercu_bold_pro.otf);
+}
+
+@font-face {
+  font-family: apercu_regular_pro;
+  src: url(fonts/apercu_regular_pro.otf);
 }
 
 .fa{
@@ -784,7 +788,7 @@ img {
 #condicoes{
   position: absolute;
   width: 30vw;
-  top: 16.625vw;
+  top: 14.625vw;
   left: 2.625vw;
 }
 
@@ -795,21 +799,21 @@ img {
   left: 40%
 }
 
-#condicoestxt,#conhecimentostxt,#estudostxt{
+#condicoestxt,#conhecimentostxt,#estudostxt,#saidastxt{
   position: absolute;
-  top: 17.5vw;
+  top: 15.5vw;
   left: 7vw;
   font-size: 2vw;
   color: white;
 }
 
-#txt1,#txt2,#txt3{
+#txt1,#txt2,#txt3,#txt4{
   color: white;
   border-left: 0.3vw solid #23d400;
   position: absolute;
   font-size: 1vw;
   text-align: justify;
-  top: 23vw;
+  top: 21vw;
   left: 3vw;
   padding: 1vw;
   border-radius: 0.3vw;
@@ -819,35 +823,50 @@ img {
 #conhecimentos{
   position: absolute;
   width: 61vw;
-  top: 42.625vw;
+  top: 40.625vw;
   left: 2.625vw;
 }
 
 #conhecimentostxt{
-  top: 43.5vw;
+  top: 41.5vw;
 }
 
 #estudos{
   position: absolute;
   width: 24vw;
-  top: 64.625vw;
+  top: 62.625vw;
   left: 2.625vw;
 }
 
 #estudostxt{
-  top: 65.5vw;
+  top: 63.5vw;
+}
+
+#saidas{
+  position: absolute;
+  width: 26vw;
+  top: 76.625vw;
+  left: 2.625vw;
+}
+
+#saidastxt{
+  top: 77.2vw;
 }
 
 #txt2{
-  top: 49vw;
+  top: 47vw;
 }
 
 #txt3{
-  top: 71vw;
+  top: 69vw;
+}
+
+#txt4{
+  top: 83vw;
 }
 
 #contentsobre{
-  padding-bottom: 90vw;
+  padding-bottom: 105vw;
 }
 
 #inicio{
@@ -868,4 +887,8 @@ img {
 }
 .scrollFade--animate {
   transition: opacity 0.4s ease-in-out;
+}
+
+.scriby{
+  color: #A5A7Ae;
 }
