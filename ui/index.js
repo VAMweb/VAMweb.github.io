@@ -7,3 +7,13 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+
+function gameON() {
+  document.getElementById("main").style.opacity="0";
+
+  setTimeout(() => {
+    document.getElementById("unity-container").style.display="block";
+    document.getElementById("unity-container").style.opacity="1";
+  }, "500")
+  
+}

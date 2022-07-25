@@ -316,6 +316,7 @@ span.psw {
 
 #main{
   text-align: center;
+  transition: opacity 0.4s ease-in-out;
 }
 
 #main h1{
@@ -891,4 +892,9 @@ img {
 
 .scriby{
   color: #A5A7Ae;
+}
+
+#unity-container{
+  transition: opacity 0.4s ease-in-out;
+  opacity: 0;
 }
