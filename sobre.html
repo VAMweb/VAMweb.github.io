@@ -4,22 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Videojogos e Aplicações Multimédia</title>
+	<link rel="stylesheet" href="ui/index.css" id="cssSheet">
 	<link rel="icon" href="ui/img/vam.ico">
-	<link rel="stylesheet" href="ui/index.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="ui/index.js" defer></script>
 	<script src="ui/scrollfade-0.1.js" defer></script>
 </head>
-<body>
+<body onload="javascript:mobileCheck()">
 	<div id="header">
 		<a href="index.html" class="logo"><img src="ui/img/vam.png" draggable="false"></a>
 		<div class="header-right">
 	    	<a class="btn" draggable="false" href="index.html">Início</a>
 	    	<a class="btn active" draggable="false" href="sobre.html">Sobre</a>
-	    	<a class="btn" draggable="false" href="#jogos">Jogos</a>
+	    	<a class="btn" draggable="false" href="jogos.html">Jogos</a>
 	    	<a class="btn" draggable="false" href="#artigos">Artigos</a>
 	    	<a class="btn" draggable="false" href="#multimedia">Multimédia</a>
-	    	<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>
+	    	<!--<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>-->
 	    	<div class="search-container">
     			<form action="/action_page.php">
       					<input type="text" placeholder="" name="search">
@@ -28,6 +28,8 @@
   			</div>
 		</div>
 	</div>
+
+	<div id="unity-container"></div>
 
 	<div id="id01" class="modal">
   

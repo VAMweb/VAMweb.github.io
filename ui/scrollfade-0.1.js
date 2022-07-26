@@ -12,10 +12,7 @@ function scrollFade() {
 		var elementFourth = rect.height/2;
 		var fadeInPoint = window.innerHeight - elementFourth;
 		var fadeOutPoint = -(rect.height/1);
-
-		console.log(elementFourth);
-		console.log(fadeOutPoint);
-
+		
 		if (rect.top <= fadeInPoint) {
 			element.classList.add('scrollFade--visible');
 			element.classList.add('scrollFade--animate');
