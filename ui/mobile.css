@@ -750,7 +750,7 @@ button {
 #sectionLabel{
   background-color: #22242c;
   position: absolute;
-  width: 100%;
+  width: 110vw;
   height: 350vw;
   top: 220vw;
 }
