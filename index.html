@@ -18,7 +18,7 @@
 	    	<a class="btn active" draggable="false" href="#inicio">Início</a>
 	    	<a class="btn" draggable="false" href="sobre.html">Sobre</a>
 	    	<a class="btn" draggable="false" href="jogos.html">Jogos</a>
-	    	<a class="btn" draggable="false" href="#artigos">Artigos</a>
+	    	<a class="btn" draggable="false" href="artigos.html">Artigos</a>
 	    	<a class="btn" draggable="false" href="#multimedia">Multimédia</a>
 	    	<!--<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>-->
 	    	<div class="search-container">
@@ -75,6 +75,11 @@
   			<h1>Vai um jogo rápido?</h1>
   			<h5>Uma pequena introdução ao nosso curso e o que te espera</h5>
   			<button onclick="gameON()">Clica no <i>Enter</i> para começar</button>
+  		</div>
+  		<div id="mainmob">
+  			<h1>Videojogos e Aplicações Multimédia</h1>
+  			<h5>Venha conhecer o nosso curso e o que te espera</h5>
+  			<button><a href="sobre.html">Clica <i>Aqui</i> para saber mais</a></button>
   		</div>
   		<div>
   			<div id="rotate0">
@@ -189,6 +194,33 @@
   				<img src="ui/img/x.png" class="floating2" id="x9" draggable="false">
   			</div>
   		</div>
+  	</section>
+
+  	<section id="sectionLabel">
+  		<a href="jogos.html">
+  			<div id="labelJogos0" onmouseover="expandLabel(0)" onmouseout="expandLabel(4)">
+  				<img src="ui/img/controllerIcon.png" id="controllerIcon" class="scrollFade" draggable="false">
+  				<h1 id="controllerTxt" class="scrollFade">Jogos</h1>
+  				<input type="text" id="labelBar0" disabled class="scrollFade">
+  				<p id="controllerTxt2">Vê aqui os videojogos realizados pelos nossos alunos. Desenvolve os teus projetos e 	portfólio, para que no fim da licenciatura estejas apto para fazer parte desta indústria.</p>
+  			</div>
+  		</a>
+  		<a href="artigos.html">
+  			<div id="labelJogos1" onmouseover="expandLabel(1)" onmouseout="expandLabel(4)">
+  				<img src="ui/img/articlesIcon.png" id="articlesIcon" class="scrollFade" draggable="false">
+  				<h1 id="articlesTxt" class="scrollFade">Artigos</h1>
+  				<input type="text" id="labelBar1" disabled class="scrollFade">
+  				<p id="articlesTxt2">A Licenciatura em VAM não consiste só na criação de jogos mas também em aprender a analisar e a criticar. Nesta página poderão aceder a um conjunto de artigos escritos pelos nossos estudantes.</p>
+  			</div>
+  		</a>
+  		<a href="index.html">
+  			<div id="labelJogos2" onmouseover="expandLabel(2)" onmouseout="expandLabel(4)">
+  				<img src="ui/img/playIcon.png" id="playIcon" class="scrollFade" draggable="false">
+  				<h1 id="playTxt" class="scrollFade">Multimédia</h1>
+  				<input type="text" id="labelBar2" disabled class="scrollFade">
+  				<p id="playTxt2">Nesta seccão poderão ver alguns proJetos criados pelos nossos estudantes, sejam vídeos, animações ou até posters alternativos dos seus jogos preferidos.</p>
+  			</div>
+  		</a>
   	</section>
   </div>
 	<script>

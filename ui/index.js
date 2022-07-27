@@ -37,3 +37,30 @@ function gameON() {
   }, "500")
  
 }
+
+function expandLabel(which) {
+
+  switch(which){
+    case 0:
+      document.getElementById("labelBar"+which).style.left="15vw";
+      document.getElementById("labelBar"+which).style.width="10vw";
+      break;
+    case 1:
+      document.getElementById("labelBar"+which).style.left="44vw";
+      document.getElementById("labelBar"+which).style.width="10vw";
+      break;
+    case 2:
+      document.getElementById("labelBar"+which).style.left="75vw";
+      document.getElementById("labelBar"+which).style.width="10vw";
+      break;
+    case 4:
+      document.getElementById("labelBar0").style.left="17vw";
+      document.getElementById("labelBar0").style.width="6vw";
+      document.getElementById("labelBar1").style.left="46vw";
+      document.getElementById("labelBar1").style.width="6vw";
+      document.getElementById("labelBar2").style.left="77vw";
+      document.getElementById("labelBar2").style.width="6vw";
+      break;
+  }
+  
+}

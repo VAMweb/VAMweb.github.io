@@ -542,31 +542,53 @@ img {
   position: absolute;
 }
 
+/* Set a style for all buttons */
+button {
+  color: white;
+  padding: 0.500vw 0.833vw;
+  margin: 0.333vw 0;
+  font-family: apercu_bold_pro;
+  border: 0.042vw solid #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #333742;
+}
+
 #main{
+  display: none;
+}
+
+#mainmob{
   text-align: center;
   transition: opacity 0.4s ease-in-out;
   padding-top: 28vw;
 }
 
-#main h1{
+#mainmob h1{
   position: relative;
   padding-top: 5.250vw;
   color: #fff;
-  font-size: 10vw;
+  font-size: 5vw;
   line-height: 0.2;
   z-index: 2;
 }
 
-#main h5{
+#mainmob h5{
   position: relative;
   color: #85878e;
   font-size: 4vw;
   z-index: 2;
 }
 
-#main button{
+#mainmob button{
   position: relative;
   z-index: 2;
+  color: white;
+}
+
+#mainmob a{
+  color: white;
+  text-decoration: none;
 }
 
 #condicoes{
@@ -642,4 +664,234 @@ img {
 
 #txt4{
   top: 295vw;
+}
+
+.jogosImg{
+  width: 80vw;
+  top: 55vw;
+  left: 10vw;
+  position: absolute;
+}
+
+.jogosTitle{
+  position: absolute;
+  top: 116vw;
+  left: 19vw;
+  font-size: 6vw;
+  color: #23d400;
+} 
+
+.jogosName{
+  color: white;
+}
+
+.jogosDesc{
+  position: absolute;
+  top: 126vw;
+  left: 3vw;
+  font-size: 4vw;
+  color: #85878e;
+  text-align: justify;
+  padding-right: 3.2vw;
+}
+
+.slk{
+  color: #23d400;
+}
+
+.jogosInfo0,.jogosInfo1,.jogosInfo2{
+  position: absolute;
+  top: 145vw;
+  left: 12vw;
+  font-size: 4vw;
+  color: white;
+  font-style: italic;
+}
+
+#exclamation0,#exclamation1,#exclamation2{
+  position: absolute;
+  top: 147.4vw;
+  left: 4vw;
+  width: 6vw;
+}
+
+#exclamation1{
+  top: 160.4vw;
+}
+
+#exclamation2{
+  top: 173.4vw;
+}
+
+.jogosInfo1{
+  top: 158vw;
+}
+
+.jogosInfo2{
+  top: 170vw;
+  padding-right: 3vw;
+}
+
+#jogosBtn{
+  position: absolute;
+  top: 185vw;
+  left: 23vw;
+  width: 50vw;
+}
+
+#tryit{
+  position: absolute;
+  top: 189vw;
+  left: 30.7vw;
+  font-size: 5vw;
+  color: white;
+}
+
+#sectionLabel{
+  background-color: #22242c;
+  position: absolute;
+  width: 100%;
+  height: 350vw;
+  top: 220vw;
+}
+
+
+#controllerIcon{
+  position: absolute;
+  width: 60vw;
+  left: 20vw;
+  top: 0vw;
+}
+
+#controllerTxt{
+  position: absolute;
+  font-size: 10vw;
+  left: 35vw;
+  top: 34vw;
+  color: white;
+}
+
+#labelBar0{
+  padding: 0vw;
+  margin-top: 0.1vw;
+  font-size: 2vw;
+  border: none;
+  border-radius: 1.042vw;
+  background-color: #23d400;
+  color: #ffffff;
+  position: absolute;
+  top: 56vw;
+  left: 42vw;
+  width: 15vw;
+  transition: all 0.2s;
+}
+
+#controllerTxt2{
+  position: absolute;
+  font-size: 5vw;
+  left: 7vw;
+  top: 64vw;
+  color: white;
+  text-align: justify;
+  width: 88vw;
+}
+
+
+#articlesIcon{
+  position: absolute;
+  width: 60vw;
+  left: 23vw;
+  top: 100vw;
+}
+
+#articlesTxt{
+  position: absolute;
+  font-size: 10vw;
+  left: 33vw;
+  top: 145vw;
+  color: white;
+}
+
+#labelBar1{
+  padding: 0vw;
+  margin-top: 0.1vw;
+  font-size: 2vw;
+  border: none;
+  border-radius: 1.042vw;
+  background-color: #23d400;
+  color: #ffffff;
+  position: absolute;
+  top: 167vw;
+  left: 42vw;
+  width: 15vw;
+  transition: all 0.2s;
+}
+
+#articlesTxt2{
+  position: absolute;
+  font-size: 5vw;
+  left: 7vw;
+  top: 174vw;
+  color: white;
+  text-align: justify;
+  width: 88vw;
+}
+
+
+#playIcon{
+  position: absolute;
+  width: 60vw;
+  left: 20vw;
+  top: 210vw;
+}
+
+#playTxt{
+  position: absolute;
+  font-size: 10vw;
+  left: 25vw;
+  top: 255vw;
+  color: white;
+}
+
+#labelBar2{
+  padding: 0vw;
+  margin-top: 0.1vw;
+  font-size: 2vw;
+  border: none;
+  border-radius: 1.042vw;
+  background-color: #23d400;
+  color: #ffffff;
+  position: absolute;
+  top: 277vw;
+  left: 43vw;
+  width: 15vw;
+  transition: all 0.2s;
+}
+
+#playTxt2{
+  position: absolute;
+  font-size: 5vw;
+  left: 7vw;
+  top: 284vw;
+  color: white;
+  text-align: justify;
+  width: 88vw;
+}
+
+#unknown{
+  display: none;
+}
+
+#unknown1{
+  position: absolute;
+  top: 25vw;
+  left: 0vw;
+  width: 100vw;
+}
+
+#unknown2{
+  position: absolute;
+  top: 100vw;
+  left: 0vw;
+  width: 100vw;
 }
