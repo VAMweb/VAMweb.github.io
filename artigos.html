@@ -7,25 +7,23 @@
 	<link rel="icon" href="ui/img/vam.ico">
 	<link rel="stylesheet" href="ui/index.css" id="cssSheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="ui/magicscroll.css" id="cssSheet">
 	<script src="ui/index.js" defer></script>
 	<script src="ui/scrollfade-0.1.js" defer></script>
+	<script src="ui/db.js" defer></script>
+	<script src="ui/magicscroll.js" defer></script>
 </head>
-<body onload="javascript:mobileCheck()">
+<body onload="javascript:mobileCheck();multimedia();titleanim(0);">
 	<div id="header">
 		<a href="index.html" class="logo"><img src="ui/img/vam.png" draggable="false"></a>
+		<img src="ui/img/VAM_Extenso.png" draggable="false" class="extension">
 		<div class="header-right">
 	    	<a class="btn" draggable="false" href="index.html">Início</a>
 	    	<a class="btn" draggable="false" href="sobre.html">Sobre</a>
 	    	<a class="btn" draggable="false" href="jogos.html">Jogos</a>
 	    	<a class="btn active" draggable="false" href="artigos.html">Artigos</a>
-	    	<a class="btn" draggable="false" href="#multimedia">Multimédia</a>
+	    	<a class="btn" draggable="false" href="multimedia.html">Multimédia</a>
 	    	<!--<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>-->
-	    	<div class="search-container">
-    			<form action="/action_page.php">
-      					<input type="text" placeholder="" name="search">
-      					<i class="fa fa-search"></i>
-    			</form>
-  			</div>
 		</div>
 	</div>
 
@@ -52,13 +50,52 @@
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
     </div>
   </form>
-</div>
+	</div>
 
-  <div>
-  	<img src="ui/img/unknown.png" draggable="false" id="unknown">
-  	<img src="ui/img/unknown1.png" draggable="false" id="unknown1">
-  	<img src="ui/img/unknown2.png" draggable="false" id="unknown2">
-  </div>
+	<div id="artigoIntro">
+		<p>A Licenciatura em VAM não consiste só na criação de jogos, mas também em aprender a analisar e, a criticar. Nesta página poderão aceder a um conjunto <br>de artigos escritos pelos nossos estudantes.</p>
+	</div>
+
+	<div id="artigoDesc">
+		<h2 style="color:#23d400" id="carTlt" class="funni">Titulo</h2>
+		<h3 id="carNam" class="funni">Nomes</h3>
+	</div>
+
+	<img src="ui/img/artigos.png" draggable="false" id="artigoTitle" onmouseover="titleanim(0);">
+	<img src="ui/img/artigosG.png" draggable="false" id="artigoTitleG" onmouseover="titleanim(0);">
+	<div id="foreffect" onmouseover="titleanim(0);"></div>
+	<div id="foreffect2" onmouseover="titleanim(0);"></div>
+
+	<footer id="footer4">
+    <div id="footerside">
+      <a href="index.html"><img src="ui/img/vam2.png" id="footerlogo"></a>
+      <a href="index.html"><img src="ui/img/fb.png" id="footerfb"></a>
+      <a href="index.html"><img src="ui/img/ig.png" id="footerig"></a>
+      <a href="index.html"><img src="ui/img/yt.png" id="footeryt"></a>
+      <a href="index.html"><img src="ui/img/li.png" id="footerli"></a>
+      <a href="index.html"><img src="ui/img/web.png" id="footerweb"></a>
+    </div>
+    <div id="footertxt">
+      <p id="footercontactos">CONTACTOS</p>
+      <div id="footerunderliner"></div>
+      <p id="footertel">Tel: 222 073 230</p>
+      <p id="footermail">info@ulp.pt</p>
+      <img src="ui/img/tel.png" id="footertelimg">
+      <img src="ui/img/mail.png" id="footermailimg">
+      <p id="footerexplora">EXPLORA</p>
+      <div id="footerunderliner2"></div>
+      <a href="index.html" onmouseover="selectFooter(0)"><p id="footerinicio">Início</p></a>
+      <a href="sobre.html" onmouseover="selectFooter(1)"><p id="footersobre">Sobre</p></a>
+      <a href="jogos.html" onmouseover="selectFooter(2)"><p id="footerjogos">Jogos</p></a>
+      <a href="artigos.html" onmouseover="selectFooter(3)"><p id="footerartigos">Artigos</p></a>
+      <a href="multimedia.html" onmouseover="selectFooter(4)"><p id="footermultimedia">Multimédia</p></a>
+      <img src="ui/img/arrow.png" id="footerselector">
+      <a id="footerconhecer">VEM CONHECER O CURSO DE VIDEOJOGOS<arow style="padding-left: 0.5vw;text-decoration: none!important;">↗</arow></a>
+      <div id="footerunderliner3"></div>
+    </div>
+    <div id="styleline"></div>
+    <div id="styleline2"></div>
+  </footer>
 
 </body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Videojogos e Aplicações Multimédia</title>
+	<link rel="stylesheet" href="ui/index.css" id="cssSheet">
+	<link rel="icon" href="ui/img/vam.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="ui/magicscroll.css" id="cssSheet">
+	<script src="ui/index.js" defer></script>
+	<script src="ui/scrollfade-0.1.js" defer></script>
+	<script src="ui/db.js" defer></script>
+	<script src="ui/magicscroll.js" defer></script>
+</head>
+<body onload="javascript:mobileCheck();titleanim(1);">
+	<div id="header">
+		<a href="index.html" class="logo"><img src="ui/img/vam.png" draggable="false"></a>
+		<img src="ui/img/VAM_Extenso.png" draggable="false" class="extension">
+		<div class="header-right">
+	    	<a class="btn" draggable="false" href="index.html">Início</a>
+	    	<a class="btn" draggable="false" href="sobre.html">Sobre</a>
+	    	<a class="btn" draggable="false" href="jogos.html">Jogos</a>
+	    	<a class="btn" draggable="false" href="artigos.html">Artigos</a>
+	    	<a class="btn active" draggable="false" href="multimedia.html">Multimédia</a>
+	    	<!--<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>-->
+		</div>
+	</div>
+
+	<div id="unity-container"></div>
+
+	<div id="id01" class="modal">
+  
+  	<form class="modal-content animate" action="/action_page.php" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    	</div>
+	
+    	<div class="container" style="background-color:#f1f1f1">
+    	  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    	</div>
+  	</form>
+	</div>
+
+	
+
+	<img src="ui/img/multimedia.png" draggable="false" id="multimediaTitle" onmouseover="titleanim(1);">
+	<img src="ui/img/multimediaG.png" draggable="false" id="multimediaTitleG" onmouseover="titleanim(1);">
+	<div id="foreffect" onmouseover="titleanim(1);"></div>
+	<div id="foreffect2" onmouseover="titleanim(1);"></div>
+
+	<div id="initialVideo">
+		<video autoplay muted loop id="myVideo">
+	  	<source src="https://ia601408.us.archive.org/8/items/test_20220905_202209/test.mp4" type="video/mp4">
+	  	Your browser does not support HTML5 video.
+		</video>
+		<h1 id="videoTitle">Hollow Knight</h1>
+	</div>
+
+</body>
+</html>

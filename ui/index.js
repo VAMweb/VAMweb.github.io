@@ -64,3 +64,150 @@ function expandLabel(which) {
   }
   
 }
+
+function multimedia(amount){
+  amount=artigos.length;
+  // create a new div element
+  const newDiv = document.createElement("div");
+  newDiv.setAttribute("id", "multiSelect");
+  newDiv.setAttribute("class", "MagicScroll");
+  newDiv.setAttribute("data-options", "mode: carousel; draggable: true;");
+  // add the newly created element and its content into the DOM
+  const currentDiv = document.getElementById("div1");
+  document.body.insertBefore(newDiv, currentDiv);
+  while(amount>0){
+    amount=amount-1;
+    
+    const newImg = document.createElement("img");
+
+    console.log(artigos[amount])
+
+    newImg.src = artigos[amount][1];
+  
+    // and give it some content
+    newImg.setAttribute("id", "Img" + amount);
+    newImg.setAttribute("class", "multiImg");
+    //newImg.setAttribute("onmouseover", "prevarticle("+amount+")");
+
+    document.getElementById("multiSelect").appendChild(newImg);
+  }
+  setTimeout(() => {
+    let numberoso = artigos.length;
+    const boxes = document.querySelectorAll('.mcs-item');
+    boxes.forEach(box => {
+      numberoso=numberoso-1;
+      box.setAttribute("onmouseover", "prevarticle("+numberoso+")");
+      box.setAttribute("onclick", "location.href='" + artigos[numberoso][3]+"'");
+    });
+  }, "500")
+  document.getElementById("multiSelect").style.height="20vw";
+}
+
+
+function prevarticle(whomst) {
+  clearTimeout(this.timeoutID);
+  document.getElementById("carTlt").style.opacity = "0%";
+  document.getElementById("carNam").style.opacity = "0%";
+  this.timeoutID = setTimeout(() => {
+    document.getElementById("carTlt").innerHTML = artigos[whomst][0];
+    document.getElementById("carNam").innerHTML = artigos[whomst][2];
+    document.getElementById("carTlt").style.opacity = "100%";
+    document.getElementById("carNam").style.opacity = "100%";
+  }, "300");
+}
+
+let busy=false;
+
+function titleanim(whomsts){
+  if (busy==false) {
+    busy=true;
+    if (whomsts==0) {
+      clearTimeout(this.timeoutID);
+      document.getElementById("foreffect2").style.display="block";
+      document.getElementById("artigoTitle").style.transition="none";
+      document.getElementById("artigoTitleG").style.transition="none";
+      this.timeoutID = setTimeout(() => {
+        document.getElementById("artigoTitle").style.top="11vw";
+        document.getElementById("artigoTitleG").style.top="10vw";
+        document.getElementById("artigoTitle").style.transition="all 0.1s";
+        document.getElementById("artigoTitleG").style.transition="all 0.15s";
+      }, "10");
+      this.timeoutID = setTimeout(() => {
+        document.getElementById("artigoTitle").style.top="6.625vw";
+      }, "1000");
+      this.timeoutID = setTimeout(() => {
+        document.getElementById("foreffect2").style.display="none";
+        document.getElementById("artigoTitleG").style.top="11vw";
+        busy=false;
+      }, "1100");
+    }else{
+      clearTimeout(this.timeoutID);
+      document.getElementById("foreffect2").style.display="block";
+      document.getElementById("multimediaTitle").style.transition="none";
+      document.getElementById("multimediaTitleG").style.transition="none";
+      this.timeoutID = setTimeout(() => {
+        document.getElementById("multimediaTitle").style.top="11vw";
+        document.getElementById("multimediaTitleG").style.top="10vw";
+        document.getElementById("multimediaTitle").style.transition="all 0.1s";
+        document.getElementById("multimediaTitleG").style.transition="all 0.15s";
+      }, "10");
+      this.timeoutID = setTimeout(() => {
+        document.getElementById("multimediaTitle").style.top="6.625vw";
+      }, "1000");
+      this.timeoutID = setTimeout(() => {
+        document.getElementById("foreffect2").style.display="none";
+        document.getElementById("multimediaTitleG").style.top="11vw";
+        busy=false;
+      }, "1100");
+    }
+    
+  }
+  
+}
+
+function selectInterested(whichone){
+  switch (whichone){
+    case 0:
+      document.getElementById("selectorIntere").style.top="14.1vw";
+      document.getElementById("selectorIntere").style.opacity="100%";
+      break;
+    case 1:
+      document.getElementById("selectorIntere").style.top="17.1vw";
+      document.getElementById("selectorIntere").style.opacity="100%";
+      break;
+    case 2:
+      document.getElementById("selectorIntere").style.top="20.1vw";
+      document.getElementById("selectorIntere").style.opacity="100%";
+      break;
+    case 3:
+      document.getElementById("selectorIntere").style.top="23.1vw";
+      document.getElementById("selectorIntere").style.opacity="100%";
+      break;
+    case 4:
+      document.getElementById("selectorIntere").style.opacity="0%";
+      break;
+  }
+  
+}
+
+function selectFooter(whichone){
+  document.getElementById("footerselector").style.opacity="100%";
+  switch (whichone){
+    case 0:
+      document.getElementById("footerselector").style.top="7.7vw";
+      break;
+    case 1:
+      document.getElementById("footerselector").style.top="9.7vw";
+      break;
+    case 2:
+      document.getElementById("footerselector").style.top="11.7vw";
+      break;
+    case 3:
+      document.getElementById("footerselector").style.top="13.7vw";
+      break;
+    case 4:
+      document.getElementById("footerselector").style.top="15.7vw";
+      break;
+  }
+  
+}

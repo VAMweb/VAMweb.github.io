@@ -6,7 +6,7 @@
 	<title>Videojogos e Aplicações Multimédia</title>
 	<link rel="icon" href="ui/img/vam.ico">
 	<link rel="stylesheet" href="ui/index.css" id="cssSheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="VAMGame-HTML5/TemplateData/style.css">
 	<script src="ui/index.js" defer></script>
 	<script src="ui/scrollfade-0.1.js" defer></script>
@@ -14,19 +14,14 @@
 <body onload="javascript:mobileCheck()">
 	<div id="header">
 		<a href="" class="logo"><img src="ui/img/vam.png" draggable="false"></a>
+    <img src="ui/img/VAM_Extenso.png" draggable="false" class="extension">
 		<div class="header-right">
 	    	<a class="btn active" draggable="false" href="#inicio">Início</a>
 	    	<a class="btn" draggable="false" href="sobre.html">Sobre</a>
-	    	<a class="btn" draggable="false" href="jogos.html">Jogos</a>
+	    	<a class="btn" draggable="false" href="jogos.html">Jogos</a> 
 	    	<a class="btn" draggable="false" href="artigos.html">Artigos</a>
-	    	<a class="btn" draggable="false" href="#multimedia">Multimédia</a>
+	    	<a class="btn" draggable="false" href="multimedia.html">Multimédia</a>
 	    	<!--<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>-->
-	    	<div class="search-container">
-    			<form action="/action_page.php">
-      					<input type="text" placeholder="" name="search">
-      					<i class="fa fa-search"></i>
-    			</form>
-  			</div>
 		</div>
 	</div>
 
@@ -222,7 +217,50 @@
   			</div>
   		</a>
   	</section>
+
+    <section id="sectionInterested" class="scrollFade">
+      <h1 style="color:#23d400;font-style: italic;" id="interestedTxt">INTERESSADO?</h1>
+      <h1 style="font-style: italic;" id="blurbTxt">VEM SABER MAIS SOBRE A LICENCIATURA EM VIDEOJOGOS</h1>
+      <a href="" id="linksTxt1" onmouseover="selectInterested(0)" onmouseout="selectInterested(4)">Licenciatura em Videojogos e Aplicações Multimédia</a><arow id="iconarrow1" style="font-size: 1.5vw; padding-left: 0.5vw;text-decoration: none!important;">↗</arow>
+      <a href="" id="linksTxt2" onmouseover="selectInterested(1)" onmouseout="selectInterested(4)">Plano de Estudos</a><arow id="iconarrow2" style="font-size: 1.5vw; padding-left: 0.5vw;text-decoration: none!important;">↗</arow>
+      <a href="" id="linksTxt3" onmouseover="selectInterested(2)" onmouseout="selectInterested(4)">Informações adicionais</a><arow id="iconarrow3" style="font-size: 1.5vw; padding-left: 0.5vw;text-decoration: none!important;">↗</arow>
+      <a href="" id="linksTxt4" onmouseover="selectInterested(3)" onmouseout="selectInterested(4)">Contactos</a><arow id="iconarrow4" style="font-size: 1.5vw; padding-left: 0.5vw;text-decoration: none!important;">↗</arow>
+      <img src="ui/img/arrow.png" draggable="false" id="selectorIntere">
+    </section>
   </div>
+
+  <footer>
+    <div id="footerside">
+      <a href="index.html"><img src="ui/img/vam2.png" id="footerlogo"></a>
+      <a href="index.html"><img src="ui/img/fb.png" id="footerfb"></a>
+      <a href="index.html"><img src="ui/img/ig.png" id="footerig"></a>
+      <a href="index.html"><img src="ui/img/yt.png" id="footeryt"></a>
+      <a href="index.html"><img src="ui/img/li.png" id="footerli"></a>
+      <a href="index.html"><img src="ui/img/web.png" id="footerweb"></a>
+    </div>
+    <div id="footertxt">
+      <p id="footercontactos">CONTACTOS</p>
+      <div id="footerunderliner"></div>
+      <p id="footertel">Tel: 222 073 230</p>
+      <p id="footermail">info@ulp.pt</p>
+      <img src="ui/img/tel.png" id="footertelimg">
+      <img src="ui/img/mail.png" id="footermailimg">
+      <p id="footerexplora">EXPLORA</p>
+      <div id="footerunderliner2"></div>
+      <a href="index.html" onmouseover="selectFooter(0)"><p id="footerinicio">Início</p></a>
+      <a href="sobre.html" onmouseover="selectFooter(1)"><p id="footersobre">Sobre</p></a>
+      <a href="jogos.html" onmouseover="selectFooter(2)"><p id="footerjogos">Jogos</p></a>
+      <a href="artigos.html" onmouseover="selectFooter(3)"><p id="footerartigos">Artigos</p></a>
+      <a href="multimedia.html" onmouseover="selectFooter(4)"><p id="footermultimedia">Multimédia</p></a>
+      <img src="ui/img/arrow.png" id="footerselector">
+      <a id="footerconhecer">VEM CONHECER O CURSO DE VIDEOJOGOS<arow style="padding-left: 0.5vw;text-decoration: none!important;">↗</arow></a>
+      <div id="footerunderliner3"></div>
+    </div>
+    <div id="styleline"></div>
+    <div id="styleline2"></div>
+  </footer>
+
+  
 	<script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
