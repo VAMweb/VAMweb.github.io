@@ -211,3 +211,32 @@ function selectFooter(whichone){
   }
   
 }
+
+var currentJogos = 0;
+
+function gmaie(indeti) {
+  if (indeti==1) {
+    currentJogos=currentJogos+1;
+  }else{
+    currentJogos=currentJogos-1;
+  }
+  if (currentJogos<0) {
+    currentJogos=jogos.length-1;
+  }else{
+    if (currentJogos>=jogos.length) {
+      currentJogos=0;
+    }
+  }
+
+  document.getElementById("gamesdiv").style.opacity="0%";
+  setTimeout(() => {
+    document.getElementById("jogosImg2").src=jogos[currentJogos][1];
+    document.getElementById("jogosName").innerHTML=jogos[currentJogos][0];
+    document.getElementById("jogosDesc").innerHTML=jogos[currentJogos][4];
+    document.getElementById("jogosInfo1").innerHTML=jogos[currentJogos][2];
+    document.getElementById("jogosInfo0").innerHTML=jogos[currentJogos][5];
+    document.getElementById("jogosLink").href=jogos[currentJogos][3];
+    document.getElementById("gamesdiv").style.opacity="100%";
+  }, "500")
+  
+}

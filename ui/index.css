@@ -915,6 +915,15 @@ img {
   top: 61vw;
   left: 10vw;
   position: absolute;
+  z-index: 1;
+}
+
+#jogosImg2{
+  width: 28.1vw;
+  height: 21vw;
+  top: 62vw;
+  left: 10vw;
+  position: absolute;
 }
 
 .jogosTitle{
@@ -954,17 +963,13 @@ img {
 
 #exclamation0,#exclamation1,#exclamation2{
   position: absolute;
-  top: 65.4vw;
-  left: 42vw;
-  width: 3vw;
+  top: 66vw;
+  left: 43vw;
+  width: 2vw;
 }
 
 #exclamation1{
-  top: 70.4vw;
-}
-
-#exclamation2{
-  top: 75.4vw;
+  top: 71vw;
 }
 
 .jogosInfo1{
@@ -977,17 +982,48 @@ img {
 
 #jogosBtn{
   position: absolute;
-  top: 80vw;
-  left: 53vw;
+  top: 75vw;
+  left: 50vw;
   width: 15vw;
 }
 
 #tryit{
   position: absolute;
-  top: 81.4vw;
-  left: 55.9vw;
+  top: 76.5vw;
+  left: 53vw;
   font-size: 1.3vw;
   color: white;
+}
+
+#arrow0{
+  position: absolute;
+  top: 71vw;
+  left: 2vw;
+  width: 4vw;
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+
+#arrow0:hover{
+  width: 5vw;
+  left: 1vw;
+}
+
+#arrow1{
+  position: absolute;
+  top: 71vw;
+  left: 90vw;
+  width: 4vw;
+  transform: rotate(-90deg);
+  transition: all 0.3s;
+}
+
+#arrow1:hover{
+  width: 5vw;
+}
+
+#gamesdiv{
+  transition: all 0.5s;
 }
 
 #introjogos{
