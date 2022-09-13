@@ -59,3 +59,9 @@ jogos[13] = new Array("THOUGHT SCAPE","https://i.imgur.com/iF4rmqN.png","Gustavo
 jogos[14] = new Array("WILLY THE FIXER","https://i.imgur.com/qiK403c.png","José Fonseca, Melissa Cebola, Nuno Morgado & Sofia Silva","https://poronite.itch.io/willy-the-fixer","Inside the piano lives Willy, a spirit that is tasked in repairing the piano and protecting it from the Yamas, creatures who once were spirits like Willy but turned evil and started destroying the insides of the piano.","Adventure");
 jogos[15] = new Array("THE CORE PROBLEM","https://i.imgur.com/0kx8ghD.png","Francisco Silva, João Esteves & Inácio Maio","https://youtu.be/gOxl7yK98-M","A fast-paced 3D FPS game, where you need to get to the core of a planet as fast as possible in order to cool it down.","First Person Shooter");
 jogos[16] = new Array("A TYPE OF ADVENTURE","https://img.itch.zone/aW1hZ2UvMTM4Mzk3Ny85MzkyMjc0LnBuZw==/original/g78KeV.png","Bernardo Santos / José Silva / José Fonseca / Melissa Cébola","https://poronite.itch.io/a-type-of-adventure","Go and live through a unique and fun quest in order to immortalize the tales of one of the greatest adventurers to have ever lived.","2D / Typing / Puzzle / Combat / Side-Scroller");
+
+let videos = new Array();
+videos[0] = new Array("Making Of Chronicles of Anur","https://youtu.be/182olT19s9Q");
+videos[1] = new Array("Making of Talk to Walk","https://youtu.be/xs0wBEW2E6E");
+videos[2] = new Array("Making of CookMania","https://youtu.be/7ls0aLWVOoY");
+videos[3] = new Array("Making of ASS","https://youtu.be/rI0KApW5cG8");

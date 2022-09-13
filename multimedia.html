@@ -13,7 +13,7 @@
 	<script src="ui/db.js" defer></script>
 	<script src="ui/magicscroll.js" defer></script>
 </head>
-<body onload="javascript:mobileCheck();titleanim(1);">
+<body onload="javascript:mobileCheck();titleanim(1);multimediaSwap(0);multimediaVideos();">
 	<div id="header">
 		<a href="index.html" class="logo"><img src="ui/img/vam.png" draggable="false"></a>
 		<img src="ui/img/VAM_Extenso.png" draggable="false" class="extension">
@@ -60,11 +60,32 @@
 	<div id="foreffect2" onmouseover="titleanim(1);"></div>
 
 	<div id="initialVideo">
-		<video autoplay muted loop id="myVideo">
-	  	<source src="https://ia601408.us.archive.org/8/items/test_20220905_202209/test.mp4" type="video/mp4">
+		<video autoplay muted id="myVideo">
+	  	<source src="https://ia801505.us.archive.org/23/items/lets-play-hollow-knight-gameplay-walkthrough-no-commentary-episode-1_202209/Let%27s%20Play%20-%20Hollow%20Knight%20Gameplay%20Walkthrough%20No%20Commentary%20-%20Episode%201.mp4" type="video/mp4">
 	  	Your browser does not support HTML5 video.
 		</video>
 		<h1 id="videoTitle">Hollow Knight</h1>
+		<img src="ui/img/multimediaBoxOn.png" id="multimediaBox0" draggable="false" onclick="multimediaSwap(0);">
+		<img src="ui/img/hollowknight.png" id="multimediaLogo0" draggable="false" onmouseover="multimediaTilte(0);" onmouseout="multimediaRes(0);" onclick="multimediaSwap(0);">
+		<img src="ui/img/multimediaBox.png" id="multimediaBox1" draggable="false" onclick="multimediaSwap(1);">
+		<img src="ui/img/portal.png" id="multimediaLogo1" draggable="false" onmouseover="multimediaTilte(1);" onmouseout="multimediaRes(1);" onclick="multimediaSwap(1);">
+		<img src="ui/img/multimediaBox.png" id="multimediaBox2" draggable="false" onclick="multimediaSwap(2);">
+		<img src="ui/img/celeste.png" id="multimediaLogo2" draggable="false" onmouseover="multimediaTilte(2);" onmouseout="multimediaRes(2);" onclick="multimediaSwap(2);">
+		<img src="ui/img/multimediaBox.png" id="multimediaBox3" draggable="false" onclick="multimediaSwap(3);">
+		<img src="ui/img/nomansky.png" id="multimediaLogo3" draggable="false" onmouseover="multimediaTilte(3);" onmouseout="multimediaRes(3);" onclick="multimediaSwap(3);">
+	</div>
+
+	<div id="generateVid">
+		<img src="ui/img/arrow.png" draggable="false" id="multiarrow" class="scrollFade">
+		<p id="descGenVid" class="scrollFade">Nesta página poderás assistir o alguns projetos criados pelos nossos estudantes, sejam vídeos, animações, trallers de Jogos ou outros projetos desenvolvidos. </p>
+		<div id="reallybigline">
+			<img src="">
+		</div>
+		<div class="videoframeleft scrollFade">
+			<img src="ui/img/videos.png"><iframe class="iframer" width="560" height="315" src="https://www.youtube.com/embed/182olT19s9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p class="desc">Making Of Chronicles of Anur</p>
+		</div>
+		
 	</div>
 
 </body>

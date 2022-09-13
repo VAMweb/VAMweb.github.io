@@ -80,8 +80,6 @@ function multimedia(amount){
     
     const newImg = document.createElement("img");
 
-    console.log(artigos[amount])
-
     newImg.src = artigos[amount][1];
   
     // and give it some content
@@ -236,7 +234,93 @@ function gmaie(indeti) {
     document.getElementById("jogosInfo1").innerHTML=jogos[currentJogos][2];
     document.getElementById("jogosInfo0").innerHTML=jogos[currentJogos][5];
     document.getElementById("jogosLink").href=jogos[currentJogos][3];
-    document.getElementById("gamesdiv").style.opacity="100%";
   }, "500")
+  setTimeout(() => {
+    document.getElementById("gamesdiv").style.opacity="100%";
+  }, "800")
   
+}
+
+function multimediaTilte(whichisit){
+  document.getElementById("multimediaBox"+whichisit).style.filter = "invert(75%)";
+}
+
+function multimediaRes(whichisit){
+  document.getElementById("multimediaBox"+whichisit).style.filter = "invert(0%)";
+}
+
+var vid = document.getElementById("myVideo");
+
+function multimediaSwap(whichisit) {
+  clearTimeout(this.timeoutID);
+
+  vid.pause();
+  switch (whichisit){
+    case 0:
+      vid.setAttribute('src', 'https://ia801505.us.archive.org/23/items/lets-play-hollow-knight-gameplay-walkthrough-no-commentary-episode-1_202209/Let%27s%20Play%20-%20Hollow%20Knight%20Gameplay%20Walkthrough%20No%20Commentary%20-%20Episode%201.mp4');
+      break;
+    case 1:
+      vid.setAttribute('src', 'https://ia601405.us.archive.org/1/items/portal_202209/portal.mp4');
+      break;
+    case 2:
+      vid.setAttribute('src', 'https://ia601406.us.archive.org/4/items/celeste_202209/celeste.mp4');
+      break;
+    case 3:
+      vid.setAttribute('src', 'https://ia601506.us.archive.org/17/items/no-mans-sky/no%20mans%20sky.mp4');
+      break;
+  }
+
+  vid.play();
+  this.timeoutID = setTimeout(() => {
+
+    vid.setAttribute('type', 'video/mp4');
+
+    if (whichisit!=3) {
+      multimediaSwap(whichisit+1);
+    }else{
+      multimediaSwap(0);
+    }
+  }, "11000")
+
+  document.getElementById("multimediaBox0").src = "ui/img/multimediaBox.png";
+  document.getElementById("multimediaBox1").src = "ui/img/multimediaBox.png";
+  document.getElementById("multimediaBox2").src = "ui/img/multimediaBox.png";
+  document.getElementById("multimediaBox3").src = "ui/img/multimediaBox.png";
+  document.getElementById("multimediaBox"+whichisit).src = "ui/img/multimediaBoxOn.png";
+
+  switch (whichisit){
+    case 0:
+      document.getElementById("videoTitle").innerHTML = "Hollow Knight";
+      break;
+    case 1:
+      document.getElementById("videoTitle").innerHTML = "Portal";
+      break;
+    case 2:
+      document.getElementById("videoTitle").innerHTML = "Celeste";
+      break;
+    case 3:
+      document.getElementById("videoTitle").innerHTML = "No Man's Sky";
+      break;
+  }
+}
+
+function multimediaVideos(){
+  for (var i = 0; i == videos.length - 1; i++) {
+    
+    const newDiv = document.createElement("div");
+  
+    // and give it some content
+    newDiv.setAttribute("id", "video" + i);
+    if (i%2==0) {
+      newDiv.setAttribute("class", "videoframeleft scrollFade");
+    }else{
+      newDiv.setAttribute("class", "videoframeright scrollFade");
+    }
+    
+    const newImg = document.createElement("img");
+
+    newImg.src = "ui/img/videos.png";
+    
+    document.getElementById("video"+i).appendChild(newImg);
+  }
 }
