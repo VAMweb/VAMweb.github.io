@@ -61,7 +61,19 @@ jogos[15] = new Array("THE CORE PROBLEM","https://i.imgur.com/0kx8ghD.png","Fran
 jogos[16] = new Array("A TYPE OF ADVENTURE","https://img.itch.zone/aW1hZ2UvMTM4Mzk3Ny85MzkyMjc0LnBuZw==/original/g78KeV.png","Bernardo Santos / José Silva / José Fonseca / Melissa Cébola","https://poronite.itch.io/a-type-of-adventure","Go and live through a unique and fun quest in order to immortalize the tales of one of the greatest adventurers to have ever lived.","2D / Typing / Puzzle / Combat / Side-Scroller");
 
 let videos = new Array();
-videos[0] = new Array("Making Of Chronicles of Anur","https://youtu.be/182olT19s9Q");
-videos[1] = new Array("Making of Talk to Walk","https://youtu.be/xs0wBEW2E6E");
-videos[2] = new Array("Making of CookMania","https://youtu.be/7ls0aLWVOoY");
-videos[3] = new Array("Making of ASS","https://youtu.be/rI0KApW5cG8");
+videos[0] = new Array("Making Of Chronicles of Anur","https://www.youtube.com/embed/182olT19s9Q");
+videos[1] = new Array("Making of Talk to Walk","https://www.youtube.com/embed/xs0wBEW2E6E");
+videos[2] = new Array("Making of CookMania","https://www.youtube.com/embed/7ls0aLWVOoY");
+videos[3] = new Array("Making of ASS","https://www.youtube.com/embed/rI0KApW5cG8");
+videos[4] = new Array("Hollow Knight - Video Review","https://www.youtube.com/embed/39lYC6aqPAQ");
+videos[5] = new Array("Portal - Video Review","https://www.youtube.com/embed/_2c0Rvk58ks");
+videos[6] = new Array("Celeste - Video Review","https://www.youtube.com/embed/NcZEkp-8bAc");
+videos[7] = new Array("No Man's Sky - Video Review","https://www.youtube.com/embed/F6wQPgyEsrQ");
+videos[8] = new Array("Florence - Video Review","https://www.youtube.com/embed/M4dAlTRea5E");
+videos[9] = new Array("Resident Evil VII - Video Review","https://www.youtube.com/embed/dGgiRvUad6s");
+videos[10] = new Array("Dishonored - Video Review","https://www.youtube.com/embed/jiUFsNwaIzs");
+videos[11] = new Array("Monster Hunter - Video Review","https://www.youtube.com/embed/BPTvlpgIFzw");
+videos[12] = new Array("Bully - Video Review","https://www.youtube.com/embed/Dv8jk2q8e3E");
+videos[13] = new Array("Global Game Jam 2020","https://www.youtube.com/embed/9dGcElzaHvw");
+videos[14] = new Array("Steel on Wheels - Entrevista aos estudantes","https://www.youtube.com/embed/mpdp26cIv0c");
+videos[15] = new Array("FallOut New Vegas - Video Review","https://www.youtube.com/embed/8jeefljUd1M");

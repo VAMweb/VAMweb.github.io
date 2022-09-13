@@ -305,22 +305,49 @@ function multimediaSwap(whichisit) {
 }
 
 function multimediaVideos(){
-  for (var i = 0; i == videos.length - 1; i++) {
-    
+  var heightMult = 10;
+  for (var i = 0; i < videos.length; i++) {
     const newDiv = document.createElement("div");
   
     // and give it some content
     newDiv.setAttribute("id", "video" + i);
+    newDiv.setAttribute("style", "top: " + heightMult+"vw");
     if (i%2==0) {
       newDiv.setAttribute("class", "videoframeleft scrollFade");
     }else{
       newDiv.setAttribute("class", "videoframeright scrollFade");
+      heightMult=heightMult+25;
     }
+    document.getElementById("generateVid").appendChild(newDiv);
     
     const newImg = document.createElement("img");
 
     newImg.src = "ui/img/videos.png";
+
+    newDiv.appendChild(newImg);
+
+    const newFrame = document.createElement("iframe");
+
+    newFrame.src = videos[i][1];
+    newFrame.setAttribute("class", "iframer");
+    newFrame.setAttribute("title", "YouTube video player");
+    newFrame.setAttribute("frameborder", "0");
+    newFrame.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture");
+
+    newDiv.appendChild(newFrame);
+
+    const newPee = document.createElement("p");
+
+    newPee.src = videos[i][1];
+    newPee.setAttribute("class", "desc");
+
+    const newContent = document.createTextNode(videos[i][0]);
+    newPee.appendChild(newContent);
     
-    document.getElementById("video"+i).appendChild(newImg);
+    newDiv.appendChild(newPee);
   }
+
+  document.getElementById("reallybigline").style.height=(heightMult-10)+"vw";
+  document.getElementById("generateVid").style.height=(heightMult+10)+"vw";
+  document.getElementById("footer5").style.top=(heightMult+58)+"vw";
 }

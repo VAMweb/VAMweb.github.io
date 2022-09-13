@@ -1530,6 +1530,10 @@ footer{
   top: 60vw;
 }
 
+#footer5{
+  top: 60vw;
+}
+
 #multimediaTitle,#multimediaTitleG{
   z-index: 2;
   position: absolute;
@@ -1673,11 +1677,15 @@ footer{
   width: 31vw;
 }
 
+.videoframeright img{
+  width: 31vw;
+}
+
 .desc{
   position: absolute;
-  left: 6vw;
+  left: 2vw;
   top: 14.5vw;
-  width: 20vw;
+  width: 27vw;
   font-size: 1.3vw;
   color: white;
   text-align: center;
