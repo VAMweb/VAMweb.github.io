@@ -1323,6 +1323,9 @@ img {
   left: 40.5vw;
   top: 13.7vw;
   color: white;
+  font-size: 1.5vw; 
+  padding-left: 0.5vw;
+  text-decoration: none!important;
 }
 
 #iconarrow2{
@@ -1689,4 +1692,10 @@ footer{
   font-size: 1.3vw;
   color: white;
   text-align: center;
+}
+
+#threearrows{
+  position: absolute;
+  left: 47.7vw;
+  width: 5vw;
 }
