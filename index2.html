@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Videojogos e Aplicações Multimédia</title>
+	<link rel="icon" href="ui/img/vam.ico">
+	<link rel="stylesheet" href="ui/index.css" id="cssSheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="VAMGame-HTML5/TemplateData/style.css">
+	<script src="ui/index.js" defer></script>
+	<script src="ui/scrollfade-0.1.js" defer></script>
+</head>
+<body onload="javascript:mobileCheck()">
+	<div id="header">
+		<a href="" class="logo"><img src="ui/img/vam.png" draggable="false"></a>
+    <img src="ui/img/VAM_Extenso.png" draggable="false" class="extension">
+		<div class="header-right">
+	    	<a class="btn active" draggable="false" href="#inicio">Início</a>
+	    	<a class="btn" draggable="false" href="sobre.html">Sobre</a>
+	    	<a class="btn" draggable="false" href="jogos.html">Jogos</a> 
+	    	<a class="btn" draggable="false" href="artigos.html">Artigos</a>
+	    	<a class="btn" draggable="false" href="multimedia.html">Multimédia</a>
+	    	<!--<a class="btn" draggable="false" onclick="document.getElementById('id01').style.display='block'">Login</a>-->
+		</div>
+	</div>
+
+	<div id="id01" class="modal">
+  
+  	<form class="modal-content animate" action="/action_page.php" method="post">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label><br>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+      <label for="psw"><b>Password</b></label><br>
+      <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+  <div id="content">
+  	<section id="inicio">	
+  		<div id="main">
+  			<h1>Vai um jogo rápido?</h1>
+  			<h5>Uma pequena introdução ao nosso curso e o que te espera</h5>
+  			<button onclick="gameON()">Clica no <i>Enter</i> para começar</button>
+  		</div>
+  		<div id="mainmob">
+  			<h1>Videojogos e Aplicações Multimédia</h1>
+  			<h5>Venha conhecer o nosso curso e o que te espera</h5>
+  			<button><a href="sobre.html">Clica <i>Aqui</i> para saber mais</a></button>
+  		</div>
+      <div id="indexvideo">
+        <video muted loop id="myVideo2">
+          <source src="ui/img/VideoWebsiteVam.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+      </div>
+      
+  		<div>
+  			<div id="rotate0">
+  				<img src="ui/img/square.png" class="floating" id="square0" draggable="false">
+  			</div>
+  			<div id="rotate1">
+  				<img src="ui/img/square.png" class="floating" id="square1" draggable="false">
+  			</div>
+  			<div id="rotate2">
+  				<img src="ui/img/square.png" class="floating" id="square2" draggable="false">
+  			</div>
+  			<div id="rotate3">
+  				<img src="ui/img/square.png" class="floating" id="square3" draggable="false">
+  			</div>
+  			<div id="rotate4">
+  				<img src="ui/img/square.png" class="floating" id="square4" draggable="false">
+  			</div>
+  			<div id="rotate5">
+  				<img src="ui/img/square.png" class="floating" id="square5" draggable="false">
+  			</div>
+  			<div id="rotate6">
+  				<img src="ui/img/triangle.png" class="floating1" id="triangle0" draggable="false">
+  			</div>
+  			<div id="rotate7">
+  				<img src="ui/img/triangle.png" class="floating1" id="triangle1" draggable="false">
+  			</div>
+  			<div id="rotate8">
+  				<img src="ui/img/triangle.png" class="floating1" id="triangle2" draggable="false">
+  			</div>
+  			<div id="rotate9">
+  				<img src="ui/img/triangle.png" class="floating1" id="triangle3" draggable="false">
+  			</div>
+  			<div id="rotate10">
+  				<img src="ui/img/triangle.png" class="floating1" id="triangle4" draggable="false">
+  			</div>
+  			<div id="rotate11">
+  				<img src="ui/img/x.png" class="floating2" id="x0" draggable="false">
+  			</div>
+  			<div id="rotate12">
+  				<img src="ui/img/x.png" class="floating2" id="x1" draggable="false">
+  			</div>
+  			<div id="rotate13">
+  				<img src="ui/img/x.png" class="floating2" id="x2" draggable="false">
+  			</div>
+  			<div id="rotate14">
+  				<img src="ui/img/x.png" class="floating2" id="x3" draggable="false">
+  			</div>
+  			<div id="rotate15">
+  				<img src="ui/img/x.png" class="floating2" id="x4" draggable="false">
+  			</div>
+  			<div id="rotate16">
+  				<img src="ui/img/x.png" class="floating2" id="x5" draggable="false">
+  			</div>
+  			<div id="rotate17">
+  				<img src="ui/img/x.png" class="floating2" id="x6" draggable="false">
+  			</div>
+  			<div id="rotate18">
+  				<img src="ui/img/circle.png" class="floating3" id="circle0" draggable="false">
+  			</div>
+  			<div id="rotate19">
+  				<img src="ui/img/circle.png" class="floating3" id="circle1" draggable="false">
+  			</div>
+  			<div id="rotate20">
+  				<img src="ui/img/circle.png" class="floating3" id="circle2" draggable="false">
+  			</div>
+  			<div id="rotate21">
+  				<img src="ui/img/circle.png" class="floating3" id="circle3" draggable="false">
+  			</div>
+  		</div>
+  	</section>
+
+  	<section class="scrollFade">	
+  		<img src="ui/img/sobreNos.png" id="sobrenosimg" draggable="false">
+  		<div id="sobretxt">
+  			<h1>A Licenciatura de VAM está organizada por 3 níveis correspondentes aos 3 anos do curso.<br><br>
+						Fomos premiados com o Prémio Fazer + Melhor Prática Pedagógica Inovadora em reconhecimento da metodologia de Project Based Learning, estrutural ao Plano de Curso.<br><br>
+						Isso significa que aprenderás ao mesmo tempo que constróis os teus projetos e crias o teu portfólio, num processo de trabalho aliciante e motivador.<br><br>
+						Jogamos, criticamos e sonhamos com os mundos virtuais que juntos iremos criar.</h1>
+  		</div>
+  		<div>
+  			<div id="rotate22">
+  				<img src="ui/img/triangle.png" class="floating1" id="triangle5" draggable="false">
+  			</div>
+  			<div id="rotate23">
+  				<img src="ui/img/triangle.png" class="floating1" id="triangle6" draggable="false">
+  			</div>
+  			<div id="rotate24">
+  				<img src="ui/img/triangle.png" class="floating1" id="triangle7" draggable="false">
+  			</div>
+  			<div id="rotate25">
+  				<img src="ui/img/square.png" class="floating" id="square6" draggable="false">
+  			</div>
+  			<div id="rotate26">
+  				<img src="ui/img/square.png" class="floating" id="square7" draggable="false">
+  			</div>
+  			<div id="rotate27">
+  				<img src="ui/img/square.png" class="floating" id="square8" draggable="false">
+  			</div>
+  			<div id="rotate28">
+  				<img src="ui/img/circle.png" class="floating3" id="circle4" draggable="false">
+  			</div>
+  			<div id="rotate29">
+  				<img src="ui/img/circle.png" class="floating3" id="circle5" draggable="false">
+  			</div>
+  			<div id="rotate30">
+  				<img src="ui/img/x.png" class="floating2" id="x7" draggable="false">
+  			</div>
+  			<div id="rotate31">
+  				<img src="ui/img/x.png" class="floating2" id="x8" draggable="false">
+  			</div>
+  			<div id="rotate32">
+  				<img src="ui/img/x.png" class="floating2" id="x9" draggable="false">
+  			</div>
+  		</div>
+  	</section>
+
+  	<section id="sectionLabel">
+  		<a href="jogos.html">
+  			<div id="labelJogos0" onmouseover="expandLabel(0)" onmouseout="expandLabel(4)">
+  				<img src="ui/img/controllerIcon.png" id="controllerIcon" class="scrollFade" draggable="false">
+  				<h1 id="controllerTxt" class="scrollFade">Jogos</h1>
+  				<input type="text" id="labelBar0" disabled class="scrollFade">
+  				<p id="controllerTxt2">Vê aqui os videojogos realizados pelos nossos alunos. Desenvolve os teus projetos e 	portfólio, para que no fim da licenciatura estejas apto para fazer parte desta indústria.</p>
+  			</div>
+  		</a>
+  		<a href="artigos.html">
+  			<div id="labelJogos1" onmouseover="expandLabel(1)" onmouseout="expandLabel(4)">
+  				<img src="ui/img/articlesIcon.png" id="articlesIcon" class="scrollFade" draggable="false">
+  				<h1 id="articlesTxt" class="scrollFade">Artigos</h1>
+  				<input type="text" id="labelBar1" disabled class="scrollFade">
+  				<p id="articlesTxt2">A Licenciatura em VAM não consiste só na criação de jogos mas também em aprender a analisar e a criticar. Nesta página poderão aceder a um conjunto de artigos escritos pelos nossos estudantes.</p>
+  			</div>
+  		</a>
+  		<a href="index.html">
+  			<div id="labelJogos2" onmouseover="expandLabel(2)" onmouseout="expandLabel(4)">
+  				<img src="ui/img/playIcon.png" id="playIcon" class="scrollFade" draggable="false">
+  				<h1 id="playTxt" class="scrollFade">Multimédia</h1>
+  				<input type="text" id="labelBar2" disabled class="scrollFade">
+  				<p id="playTxt2">Nesta seccão poderão ver alguns proJetos criados pelos nossos estudantes, sejam vídeos, animações ou até posters alternativos dos seus jogos preferidos.</p>
+  			</div>
+  		</a>
+  	</section>
+
+    <section id="sectionInterested" class="scrollFade">
+      <h1 style="font-style: italic;color:#23d400;" id="blurbTxt">VEM SABER MAIS SOBRE A LICENCIATURA EM VIDEOJOGOS E APLICAÇÕES MULTIMÉDIA</h1>
+      <a href="" id="linksTxt1" onmouseover="selectInterested(0)" onmouseout="selectInterested(4)">Licenciatura em Videojogos e Aplicações Multimédia</a><arow id="iconarrow1">↗</arow>
+      <a href="" id="linksTxt2" onmouseover="selectInterested(1)" onmouseout="selectInterested(4)">Plano de Estudos</a><arow id="iconarrow2">↗</arow>
+      <a href="" id="linksTxt3" onmouseover="selectInterested(2)" onmouseout="selectInterested(4)">Informações adicionais</a><arow id="iconarrow3">↗</arow>
+      <a href="" id="linksTxt4" onmouseover="selectInterested(3)" onmouseout="selectInterested(4)">Contactos</a><arow id="iconarrow4">↗</arow>
+      <img src="ui/img/arrow.png" draggable="false" id="selectorIntere">
+    </section>
+  </div>
+
+  <footer>
+      <a href="index.html"><img src="ui/img/vam2.png" id="footerlogo"></a>
+      <a href="https://www.facebook.com/VAMULP"><img src="ui/img/fb.png" id="footerfb"></a>
+      <a href="https://www.instagram.com/vam_ulp/"><img src="ui/img/ig.png" id="footerig"></a>
+      <a href="https://www.youtube.com/channel/UC6kld1O_PUSw5Hv9Ft1knUQ"><img src="ui/img/yt.png" id="footeryt"></a>
+      <div id="footertxt">
+      <p id="footercontactos">CONTACTOS</p>
+      <div id="footerunderliner"></div>
+      <p id="footertel">Tel: 222 073 230</p>
+      <p id="footermail">info@ulp.pt</p>
+      <img src="ui/img/tel.png" id="footertelimg">
+      <img src="ui/img/mail.png" id="footermailimg">
+      <img src="ui/img/arrow.png" id="footerselector">
+      <a id="footerconhecer" href="https://www.ulp.pt/licenciaturas/videojogos-e-aplicacoes-multimedia">VEM CONHECER O CURSO DE VIDEOJOGOS<arow style="padding-left: 0.5vw;text-decoration: none!important;">↗</arow></a>
+      <div id="footerunderliner3"></div>
+    </div>
+    <div id="styleline"></div>
+    <div id="styleline2"></div>
+  </footer>
+
+  
+</body>
+</html>

@@ -942,6 +942,7 @@ footer{
   height: 6vw;
   background-color: #2d7328;
   overflow: hidden;
+  display: none;
 }
 
 #footerlogo{
@@ -1305,19 +1306,20 @@ footer{
 }
 
 #multiarrow{
-  width: 2vw;
+  width: 5vw;
   position: absolute;
-  left: 6vw;
-  top: 50vw;
+  left: 5vw;
+  top: 68vw;
 }
 
 #descGenVid{
   position: absolute;
   color: white;
   font-size: 4vw;
-  top: 50vw;
-  left: 8vw;
-  width: 98vw;
+  top: 60vw;
+  left: 15vw;
+  width: 80vw;
+  text-align: justify;
 }
 
 #reallybigline{
@@ -1379,6 +1381,7 @@ footer{
   position: absolute;
   left: 47.7vw;
   width: 5vw;
+  display: none;
 }
 
 #multimediaTitle,#multimediaTitleG{
@@ -1403,12 +1406,13 @@ footer{
   right: 0;
   bottom: 0;
   height: 66vw;
-  left: 0vw;
+  width: 99vw;
+  left: 1vw;
 }
 
 #initialVideo{
   position: absolute;
-  top: 36vw;
+  top: 46vw;
   width: 100%;
   height: 66vw;
   background-color: black;
@@ -1426,19 +1430,19 @@ footer{
 
 #multimediaBox0,#multimediaBox1,#multimediaBox2,#multimediaBox3,#multimediaLogo0,#multimediaLogo1,#multimediaLogo2,#multimediaLogo3{
   position: absolute;
-  width: 13vw;
-  top: 28vw;
-  left: 22vw;
+  width: 24vw;
+  top: 52vw;
+  left: 1vw;
   z-index: 1;
   -webkit-transition : -webkit-filter 0.2s linear;
 }
 
 #multimediaLogo0,#multimediaLogo1,#multimediaLogo2,#multimediaLogo3{
-  top: 28.6vw;
+  top: 52.6vw;
 }
 
 #multimediaLogo1{
-  top: 28.2vw;
+  top: 52.2vw;
 }
 
 #multimediaBox0:hover,#multimediaBox1:hover,#multimediaBox2:hover,#multimediaBox3:hover{
@@ -1446,19 +1450,19 @@ footer{
 }
 
 #multimediaBox1,#multimediaLogo1{
-  left: 38vw;
+  left: 26vw;
 }
 
 #multimediaBox2,#multimediaLogo2{
-  left: 55vw;
+  left: 51vw;
 }
 
 #multimediaBox3,#multimediaLogo3{
-  left: 71vw;
+  left: 75vw;
 }
 
 #multimediaLogo2{
-  top: 28vw;
-  width: 7vw;
-  left: 58vw;
+  top: 51.4vw;
+  width: 14vw;
+  left: 56vw;
 }
