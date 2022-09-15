@@ -191,7 +191,124 @@ body {
   right: 0;
 }
 
+#rotate28{
+  transform: rotate(319deg);
+  position: absolute;
+}
 
+#rotate29{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate30{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate31{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate32{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate33{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate34{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate35{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate36{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate37{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate38{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate39{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate40{
+  transform: rotate(337deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate41{
+  transform: rotate(278deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate42{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate43{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate44{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate45{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate46{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
+
+#rotate47{
+  transform: rotate(0deg);
+  position: absolute;
+  right: 0;
+}
 
 .floating { 
     animation-name: floating;
@@ -301,6 +418,13 @@ body {
   width: 1.250vw;
   left: 6.250vw;
   top: -8.333vw;
+  position: absolute;
+}
+
+#square15{
+  width: 3.250vw;
+  left: -68.250vw;
+  top: 43.333vw;
   position: absolute;
 }
 
@@ -477,6 +601,14 @@ section{
   position: absolute;
 }
 
+#triangle8{
+  filter: brightness(0) invert(1);
+  width: 2.667vw;
+  left: 9.917vw;
+  top: 36.167vw;
+  position: absolute;
+}
+
 #square6{
   filter: brightness(0) invert(1);
   width: 2.083vw;
@@ -508,6 +640,52 @@ img {
   position: absolute;
 }
 
+#square9{
+  filter: brightness(0) invert(1);
+  width: 3.250vw;
+  left: -19.250vw;
+  top: 62.333vw;
+  position: absolute;
+}
+
+#square10{
+  width: 2.250vw;
+  left: -25.250vw;
+  top: 52.333vw;
+  position: absolute;
+}
+
+#square11{
+  filter: grayscale(100%);
+  width: 4.250vw;
+  left: -28.250vw;
+  top: 75.333vw;
+  position: absolute;
+}
+
+#square12{
+  width: 3.250vw;
+  left: -80.250vw;
+  top: 15.333vw;
+  position: absolute;
+}
+
+#square13{
+  filter: grayscale(100%);
+  width: 2.250vw;
+  left: -80.250vw;
+  top: 15.333vw;
+  position: absolute;
+}
+
+#square14{
+  filter: brightness(0) invert(1);
+  width: 3.250vw;
+  left: -40.250vw;
+  top: -21.333vw;
+  position: absolute;
+}
+
 #circle4{
   width: 2.500vw;
   left: 23.542vw;
@@ -520,6 +698,35 @@ img {
   width: 1.667vw;
   left: 30.208vw;
   top: 8.083vw;
+  position: absolute;
+}
+
+#circle6{
+  filter: brightness(0) invert(1);
+  width: 2.667vw;
+  left: -11.208vw;
+  top: 80.083vw;
+  position: absolute;
+}
+
+#introsymbols{
+  position: absolute;
+  left: 75vw;
+  top: -20vw;
+}
+
+#circle7{
+  filter: brightness(0) invert(1);
+  width: 1.667vw;
+  left: -54.208vw;
+  top: 34.083vw;
+  position: absolute;
+}
+
+#circle8{
+  width: 2.667vw;
+  left: -15.208vw;
+  top: 27.083vw;
   position: absolute;
 }
 
@@ -544,6 +751,78 @@ img {
   width: 1.667vw;
   left: -55.125vw;
   top: 11.625vw;
+  position: absolute;
+}
+
+#x10{
+  filter: brightness(0) invert(1);
+  width: 3.667vw;
+  left: -93.125vw;
+  top: 52.625vw;
+  position: absolute;
+}
+
+#x11{
+  filter: grayscale(100%);
+  width: 3.667vw;
+  left: -90.125vw;
+  top: 84.625vw;
+  position: absolute;
+}
+
+#x12{
+  filter: brightness(0) invert(1);
+  width: 1.667vw;
+  left: -16.125vw;
+  top: 56.625vw;
+  position: absolute;
+}
+
+#x13{
+  filter: brightness(0) invert(1);
+  width: 3.667vw;
+  left: -50.125vw;
+  top: 78.625vw;
+  position: absolute;
+}
+
+#x14{
+  filter: brightness(0) invert(1);
+  width: 5.667vw;
+  left: -37.125vw;
+  top: 81.625vw;
+  position: absolute;
+}
+
+#x15{
+  filter: brightness(0) invert(1);
+  width: 5.667vw;
+  left: -46.125vw;
+  top: 44.625vw;
+  position: absolute;
+}
+
+#x16{
+  filter: brightness(0) invert(1);
+  width: 1.667vw;
+  left: -17.125vw;
+  top: 20.625vw;
+  position: absolute;
+}
+
+#x17{
+  filter: grayscale(100%);
+  width: 2.667vw;
+  left: -21.125vw;
+  top: 44.625vw;
+  position: absolute;
+}
+
+#x18{
+  filter: grayscale(100%);
+  width: 2.667vw;
+  left: -1.125vw;
+  top: 47.625vw;
   position: absolute;
 }
 
