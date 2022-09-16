@@ -561,6 +561,12 @@ section{
   position: absolute;
 }
 
+.section1index{
+  position: absolute;
+  top: 80vw;
+  width: 100vw;
+}
+
 #sobretxt{
   color: white;
   background-color: #60636c;
@@ -574,7 +580,7 @@ section{
   padding-right: 6.250vw;
   font-size: 2vw;
   text-align: justify;
-  top: 160vw;
+  top: 70vw;
   z-index: 2;
 }
 
@@ -873,6 +879,25 @@ button {
 #mainmob a{
   color: white;
   text-decoration: none;
+}
+
+#myVideo2{
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+#indexvideo{
+  position: absolute;
+  top: 20vw;
+  width: 100%;
+  height: 45vw;
+  overflow:hidden;
+}
+
+#rotatimos2{
+  overflow: hidden;
+  position: absolute;
 }
 
 #condicoes{

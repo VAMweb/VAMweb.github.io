@@ -1,11 +1,14 @@
-let values = new Array();
-values[0] = new Array("Hollow Knight","https://cdn.cloudflare.steamstatic.com/steam/apps/367520/library_600x900.jpg","https://ia601400.us.archive.org/31/items/lets-play-hollow-knight-gameplay-walkthrough-no-commentary-episode-1/Let%27s%20Play%20-%20Hollow%20Knight%20Gameplay%20Walkthrough%20No%20Commentary%20-%20Episode%201.mp4");
-values[1] = new Array("ELDEN RING","https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/library_600x900.jpg");
-values[2] = new Array("Destiny 2","https://cdn.cloudflare.steamstatic.com/steam/apps/1085660/library_600x900.jpg");
-values[3] = new Array("Genshin Impact","https://thumbnails.pcgamingwiki.com/0/0a/Genshin_Impact_cover.jpg/300px-Genshin_Impact_cover.jpg");
-values[4] = new Array("League of Legends","https://interfaceingame.com/wp-content/uploads/league-of-legends/league-of-legends-cover-375x500.jpg");
-values[5] = new Array("Bully","https://cdn.cloudflare.steamstatic.com/steam/apps/12200/library_600x900.jpg");
-values[6] = new Array("Resident Evil 7 Biohazard","https://cdn.cloudflare.steamstatic.com/steam/apps/418370/library_600x900.jpg");
+//A lista "artigos" representa os Jogos na página de Artigos.
+//O primeiro valor da lista é o nome do Jogo. Por exemplo: "Hollow Knight"
+
+//O segundo valor da lista é um link de uma imagem que representa o Jogo. Por exemplo: "https://i.imgur.com/iW9hFhu.png"
+//É recomendado usar um serviço como o imgur.com para dar host das imagens.
+//NOTA: Tenham a certeza que o link acaba em '.png' ou '.jpg' para que este funcione corretamente.
+
+//O terceiro valor da lista são os nomes de quem escreveu o Artigo. Por exemplo: "Jenifer Lagoaça & Lara Moreira"
+
+//O quarto e ultimo valor da lista é um link do Artigo PDF em questão. Por exemplo: "https://criticaanalisevideojogos.files.wordpress.com/2021/02/hollowknight_jenifer_lara.pdf"
+//NOTA: Tenham a certeza que o link acaba em '.pdf' para que este funcione corretamente.
 
 let artigos = new Array();
 artigos[0] = new Array("Hollow Knight","https://i.imgur.com/iW9hFhu.png","Jenifer Lagoaça & Lara Moreira","https://criticaanalisevideojogos.files.wordpress.com/2021/02/hollowknight_jenifer_lara.pdf");
@@ -41,6 +44,21 @@ artigos[29] = new Array("The Last Guardian","https://i.imgur.com/msDagRK.png","L
 artigos[30] = new Array("Silent Hill 2","https://i.imgur.com/24DA8Tw.png","Simão Gonçalves","https://criticaanalisevideojogos.files.wordpress.com/2019/06/silent-hill-2-critica.pdf");
 artigos[31] = new Array("Metal Gear Solid","https://i.imgur.com/pBenh86.png","Fábio França","https://criticaanalisevideojogos.files.wordpress.com/2019/05/metal-gear-solid-review-fc3a1bio-franc3a7a.pdf");
 
+//A lista "jogos" representa os Jogos na página de Jogos.
+//O primeiro valor da lista é o nome do Jogo. Por exemplo: "KHABA RUN"
+
+//O segundo valor da lista é um link de uma imagem que representa o Jogo. Por exemplo: "https://i.imgur.com/yPqZfwP.png"
+//É recomendado usar um serviço como o imgur.com para dar host das imagens.
+//NOTA: Tenham a certeza que o link acaba em '.png' ou '.jpg' para que este funcione corretamente.
+
+//O terceiro valor da lista são os nomes de quem fez o Jogo. Por exemplo: "Vasco Coelho, Simão Gonçalves, Diogo Alves, Bruno Fonseca & Bernardo Fosquinha"
+
+//O quarto valor da lista é um link do Jogo em questão. Por exemplo: "http://videojogos.ulp.pt/jogos/khabarun/"
+
+//O quinto valor da lista é uma breve descrição do Jogo. Por exemplo: "Corridas labirínticas até ao centro de pistas com inspiração na arte da civilização Maia. Khaba Run é um jogo arcade frenético de 1 a 4 jogadores."
+
+//O sexto e ultimo valor da lista é para o género(s) do Jogo. Por exemplo: "Arcade"
+
 let jogos = new Array();
 jogos[0] = new Array("KHABA RUN","https://i.imgur.com/yPqZfwP.png","Vasco Coelho, Simão Gonçalves, Diogo Alves, Bruno Fonseca & Bernardo Fosquinha","http://videojogos.ulp.pt/jogos/khabarun/","Corridas labirínticas até ao centro de pistas com inspiração na arte da civilização Maia. Khaba Run é um jogo arcade frenético de 1 a 4 jogadores.","Arcade");
 jogos[1] = new Array("ASS","https://i.imgur.com/6yVCNg0.png","Fábio Filho, Lucas Tamaki, José Ribeiro & Rui Lima","https://linktr.ee/Airplane_Saviour_Simulator","Airplane Savior Simulator is an asymmetric cooperative puzzle game, in which two people will have to work collectively to save a plane from crashing.","");
@@ -57,8 +75,14 @@ jogos[11] = new Array("STEEL ON WHEELS","https://i.imgur.com/k5tjja4.png","Fábi
 jogos[12] = new Array("THERMOJUMP","https://i.imgur.com/qL5Ihm0.png","Pedro Barbosa & Bernardo Santos","https://pedrobarbosa.itch.io/thermojump","A first person puzzle platformer where you are an adventurer and your goal is to collect treasures and complete levels by rocket jumping!","Adventure / Puzzle");
 jogos[13] = new Array("THOUGHT SCAPE","https://i.imgur.com/iF4rmqN.png","Gustavo Maldonado & Bernado Santos","https://woushpt.itch.io/thoughtscape","You play as Sam, a young guy, that tends to get lost on his thoughts when he gets a shower. Who doesn't?","Educational");
 jogos[14] = new Array("WILLY THE FIXER","https://i.imgur.com/qiK403c.png","José Fonseca, Melissa Cebola, Nuno Morgado & Sofia Silva","https://poronite.itch.io/willy-the-fixer","Inside the piano lives Willy, a spirit that is tasked in repairing the piano and protecting it from the Yamas, creatures who once were spirits like Willy but turned evil and started destroying the insides of the piano.","Adventure");
-jogos[15] = new Array("THE CORE PROBLEM","https://i.imgur.com/0kx8ghD.png","Francisco Silva, João Esteves & Inácio Maio","https://youtu.be/gOxl7yK98-M","A fast-paced 3D FPS game, where you need to get to the core of a planet as fast as possible in order to cool it down.","First Person Shooter");
+jogos[15] = new Array("THE MELTY CORE","https://i.imgur.com/0kx8ghD.png","Francisco Silva, João Esteves & Inácio Maio","https://youtu.be/gOxl7yK98-M","A fast-paced 3D FPS game, where you need to get to the core of a planet as fast as possible in order to cool it down.","First Person Shooter");
 jogos[16] = new Array("A TYPE OF ADVENTURE","https://img.itch.zone/aW1hZ2UvMTM4Mzk3Ny85MzkyMjc0LnBuZw==/original/g78KeV.png","Bernardo Santos / José Silva / José Fonseca / Melissa Cébola","https://poronite.itch.io/a-type-of-adventure","Go and live through a unique and fun quest in order to immortalize the tales of one of the greatest adventurers to have ever lived.","2D / Typing / Puzzle / Combat / Side-Scroller");
+
+//A lista "videos" representa os videos na página de Multimedia.
+//O primeiro valor da lista é o nome do video. Por exemplo: "Making Of Chronicles of Anur"
+
+//O segundo e ultimo valor da lista é o link do video no YouTube. Por exemplo: "https://www.youtube.com/embed/182olT19s9Q"
+//NOTA: Tenham a certeza que o formato do link é "https://www.youtube.com/embed/XXXX" para que este funcione corretamente. (XXXX é o ID do video em questão, encontrado no URL)
 
 let videos = new Array();
 videos[0] = new Array("Making Of Chronicles of Anur","https://www.youtube.com/embed/182olT19s9Q");
