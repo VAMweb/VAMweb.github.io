@@ -40,9 +40,8 @@ artigos[25] = new Array("A Hat in Time","https://i.imgur.com/Q0BFFCO.png","Melis
 artigos[26] = new Array("NieR: Automata","https://i.imgur.com/9jGcYql.png","Inácio Maio","https://criticaanalisevideojogos.files.wordpress.com/2019/11/inacio_maio_a21902705_nierautomata.pdf");
 artigos[27] = new Array("Bloodborne","https://i.imgur.com/YcdwuhP.png","Vinicius Laurindo","https://criticaanalisevideojogos.files.wordpress.com/2019/06/vinc3adcius-ensaio-crc3adtico-bloodborne.pdf");
 artigos[28] = new Array("The Begginer’s Guide","https://i.imgur.com/1to5MyS.png","Bernardo Fosquinha","https://criticaanalisevideojogos.files.wordpress.com/2019/06/beginners-guide-review_bernardofosquinha.pdf");
-artigos[29] = new Array("The Last Guardian","https://i.imgur.com/msDagRK.png","Luana Baía","https://criticaanalisevideojogos.files.wordpress.com/2019/06/luana-bac3ada_thelastguardian_review.pdf");
+artigos[29] = new Array("Metal Gear Solid","https://i.imgur.com/pBenh86.png","Fábio França","https://criticaanalisevideojogos.files.wordpress.com/2019/05/metal-gear-solid-review-fc3a1bio-franc3a7a.pdf");
 artigos[30] = new Array("Silent Hill 2","https://i.imgur.com/24DA8Tw.png","Simão Gonçalves","https://criticaanalisevideojogos.files.wordpress.com/2019/06/silent-hill-2-critica.pdf");
-artigos[31] = new Array("Metal Gear Solid","https://i.imgur.com/pBenh86.png","Fábio França","https://criticaanalisevideojogos.files.wordpress.com/2019/05/metal-gear-solid-review-fc3a1bio-franc3a7a.pdf");
 
 //A lista "jogos" representa os Jogos na página de Jogos.
 //O primeiro valor da lista é o nome do Jogo. Por exemplo: "KHABA RUN"
@@ -75,7 +74,7 @@ jogos[11] = new Array("STEEL ON WHEELS","https://i.imgur.com/k5tjja4.png","Fábi
 jogos[12] = new Array("THERMOJUMP","https://i.imgur.com/qL5Ihm0.png","Pedro Barbosa & Bernardo Santos","https://pedrobarbosa.itch.io/thermojump","A first person puzzle platformer where you are an adventurer and your goal is to collect treasures and complete levels by rocket jumping!","Adventure / Puzzle");
 jogos[13] = new Array("THOUGHT SCAPE","https://i.imgur.com/iF4rmqN.png","Gustavo Maldonado & Bernado Santos","https://woushpt.itch.io/thoughtscape","You play as Sam, a young guy, that tends to get lost on his thoughts when he gets a shower. Who doesn't?","Educational");
 jogos[14] = new Array("WILLY THE FIXER","https://i.imgur.com/qiK403c.png","José Fonseca, Melissa Cebola, Nuno Morgado & Sofia Silva","https://poronite.itch.io/willy-the-fixer","Inside the piano lives Willy, a spirit that is tasked in repairing the piano and protecting it from the Yamas, creatures who once were spirits like Willy but turned evil and started destroying the insides of the piano.","Adventure");
-jogos[15] = new Array("THE MELTY CORE","https://i.imgur.com/0kx8ghD.png","Francisco Silva, João Esteves & Inácio Maio","https://youtu.be/gOxl7yK98-M","A fast-paced 3D FPS game, where you need to get to the core of a planet as fast as possible in order to cool it down.","First Person Shooter");
+jogos[15] = new Array("THE CORE PROBLEM","https://i.imgur.com/0kx8ghD.png","Francisco Silva, João Esteves & Inácio Maio","https://youtu.be/gOxl7yK98-M","A fast-paced 3D FPS game, where you need to get to the core of a planet as fast as possible in order to cool it down.","First Person Shooter");
 jogos[16] = new Array("A TYPE OF ADVENTURE","https://img.itch.zone/aW1hZ2UvMTM4Mzk3Ny85MzkyMjc0LnBuZw==/original/g78KeV.png","Bernardo Santos / José Silva / José Fonseca / Melissa Cébola","https://poronite.itch.io/a-type-of-adventure","Go and live through a unique and fun quest in order to immortalize the tales of one of the greatest adventurers to have ever lived.","2D / Typing / Puzzle / Combat / Side-Scroller");
 
 //A lista "videos" representa os videos na página de Multimedia.
@@ -101,3 +100,4 @@ videos[12] = new Array("Bully - Video Review","https://www.youtube.com/embed/Dv8
 videos[13] = new Array("Global Game Jam 2020","https://www.youtube.com/embed/9dGcElzaHvw");
 videos[14] = new Array("Steel on Wheels - Entrevista aos estudantes","https://www.youtube.com/embed/mpdp26cIv0c");
 videos[15] = new Array("FallOut New Vegas - Video Review","https://www.youtube.com/embed/8jeefljUd1M");
+videos[16] = new Array("ICO - Video Review","https://www.youtube.com/embed/kh78S5HsO-k");

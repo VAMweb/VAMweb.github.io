@@ -1286,6 +1286,13 @@ img {
 
 #gamesdiv{
   transition: all 0.5s;
+  pointer-events: all;
+}
+
+#contentjogos{
+  position: absolute;
+  top: -20vw;
+  width: 100vw;
 }
 
 #introjogos{
@@ -1308,29 +1315,30 @@ img {
 
 #controllerIcon{
   position: absolute;
-  width: 10vw;
-  left: 15vw;
-  top: 4vw;
+  width: 8vw;
+  left: 16vw;
+  top: 5vw;
+  transition: filter 0.2s;
 }
 
 #controllerTxt{
   position: absolute;
-  font-size: 4vw;
-  left: 15vw;
-  top: 8vw;
+  font-size: 3vw;
+  left: 16vw;
+  top: 9vw;
   color: white;
 }
 
 #labelBar0{
   padding: 0vw;
   margin-top: 0.1vw;
-  font-size: 1vw;
+  font-size: 0.5vw;
   border: none;
   border-radius: 1.042vw;
   background-color: #23d400;
   color: #ffffff;
   position: absolute;
-  top: 17vw;
+  top: 16vw;
   left: 17vw;
   width: 6vw;
   transition: all 0.2s;
@@ -1357,26 +1365,27 @@ img {
   width: 10vw;
   left: 44.6vw;
   top: 2vw;
+  transition: filter 0.2s;
 }
 
 #articlesTxt{
   position: absolute;
-  font-size: 4vw;
-  left: 43vw;
-  top: 8vw;
+  font-size: 3vw;
+  left: 44.3vw;
+  top: 9vw;
   color: white;
 }
 
 #labelBar1{
   padding: 0vw;
   margin-top: 0.1vw;
-  font-size: 1vw;
+  font-size: 0.5vw;
   border: none;
   border-radius: 1.042vw;
   background-color: #23d400;
   color: #ffffff;
   position: absolute;
-  top: 17vw;
+  top: 16vw;
   left: 46vw;
   width: 6vw;
   transition: all 0.2s;
@@ -1403,26 +1412,27 @@ img {
   width: 10vw;
   left: 75vw;
   top: 2vw;
+  transition: filter 0.2s;
 }
 
 #playTxt{
   position: absolute;
-  font-size: 4vw;
-  left: 70vw;
-  top: 8vw;
+  font-size: 3vw;
+  left: 72.5vw;
+  top: 9vw;
   color: white;
 }
 
 #labelBar2{
   padding: 0vw;
   margin-top: 0.1vw;
-  font-size: 1vw;
+  font-size: 0.5vw;
   border: none;
   border-radius: 1.042vw;
   background-color: #23d400;
   color: #ffffff;
   position: absolute;
-  top: 17vw;
+  top: 16vw;
   left: 77vw;
   width: 6vw;
   transition: all 0.2s;
@@ -1528,7 +1538,7 @@ img {
   background-color: #333742;
   position: absolute;
   width: 100%;
-  height: 40vw;
+  height: 20vw;
   top: 110vw;
   color: white;
 }
@@ -1542,7 +1552,7 @@ img {
 
 #blurbTxt{
   font-size: 1.4vw;
-  top: 8vw;
+  top: 3vw;
   text-decoration: underline;
   text-underline-position: under;
   text-decoration-color: #29921c;
@@ -1552,7 +1562,7 @@ img {
   position: absolute;
   font-size: 1vw;
   left: 16vw;
-  top: 14vw;
+  top: 9vw;
   color: white;
   text-decoration: underline;
   text-underline-position: under;
@@ -1565,15 +1575,15 @@ img {
 }
 
 #linksTxt2{
-  top: 17vw;
+  top: 12vw;
 }
 
 #linksTxt3{
-  top: 20vw;
+  top: 15vw;
 }
 
 #linksTxt4{
-  top: 23vw;
+  top: 18vw;
 }
 
 .fa-external-link{
@@ -1583,7 +1593,7 @@ img {
 #iconarrow1,#iconarrow2,#iconarrow3,#iconarrow4{
   position: absolute;
   left: 40.5vw;
-  top: 13.7vw;
+  top: 8.7vw;
   color: white;
   font-size: 1.5vw; 
   padding-left: 0.5vw;
@@ -1592,22 +1602,17 @@ img {
 
 #iconarrow2{
   left: 24vw;
-  top: 16.7vw;
+  top: 11.7vw;
 }
 
 #iconarrow3{
   left: 27vw;
-  top: 19.7vw;
+  top: 14.7vw;
 }
 
 #iconarrow4{
   left: 21vw;
-  top: 22.7vw;
-}
-
-#iconarrow4{
-  left: 21vw;
-  top: 22.7vw;
+  top: 17.7vw;
 }
 
 #selectorIntere{
@@ -1621,7 +1626,7 @@ img {
 
 footer{
   position: absolute;
-  top: 145vw;
+  top: 136vw;
   width: 100%;
   height: 6vw;
   background-color: #2d7328;
@@ -1788,7 +1793,7 @@ footer{
 }
 
 #footer3{
-  top: 95vw;
+  top: 73vw;
 }
 
 #footer4{
@@ -1858,14 +1863,16 @@ footer{
 }
 
 #multimediaLogo1{
-  top: 28.2vw;
+  top: 29vw;
+  left: 39vw;
+  width: 10vw;
 }
 
 #multimediaBox0:hover,#multimediaBox1:hover,#multimediaBox2:hover,#multimediaBox3:hover{
   filter: invert(75%);
 }
 
-#multimediaBox1,#multimediaLogo1{
+#multimediaBox1{
   left: 38vw;
 }
 
@@ -1881,6 +1888,12 @@ footer{
   top: 28vw;
   width: 7vw;
   left: 58vw;
+}
+
+#multimediaLogo3{
+  top: 29.6vw;
+  width: 12vw;
+  left: 71.5vw;
 }
 
 #generateVid{

@@ -55,14 +55,17 @@ function expandLabel(which) {
     case 0:
       document.getElementById("labelBar"+which).style.left="15vw";
       document.getElementById("labelBar"+which).style.width="10vw";
+      document.getElementById("controllerIcon").style.filter="drop-shadow(0vw 0vw 0.3vw #23d400)";
       break;
     case 1:
       document.getElementById("labelBar"+which).style.left="44vw";
       document.getElementById("labelBar"+which).style.width="10vw";
+      document.getElementById("articlesIcon").style.filter="drop-shadow(0vw 0vw 0.3vw #23d400)";
       break;
     case 2:
       document.getElementById("labelBar"+which).style.left="75vw";
       document.getElementById("labelBar"+which).style.width="10vw";
+      document.getElementById("playIcon").style.filter="drop-shadow(0vw 0vw 0.3vw #23d400)";
       break;
     case 4:
       document.getElementById("labelBar0").style.left="17vw";
@@ -71,6 +74,9 @@ function expandLabel(which) {
       document.getElementById("labelBar1").style.width="6vw";
       document.getElementById("labelBar2").style.left="77vw";
       document.getElementById("labelBar2").style.width="6vw";
+      document.getElementById("controllerIcon").style.filter="drop-shadow(0vw 0vw 0vw #23d400)";
+      document.getElementById("articlesIcon").style.filter="drop-shadow(0vw 0vw 0vw #23d400)";
+      document.getElementById("playIcon").style.filter="drop-shadow(0vw 0vw 0vw #23d400)";
       break;
   }
   
@@ -177,19 +183,19 @@ function titleanim(whomsts){
 function selectInterested(whichone){
   switch (whichone){
     case 0:
-      document.getElementById("selectorIntere").style.top="14.1vw";
+      document.getElementById("selectorIntere").style.top="9.1vw";
       document.getElementById("selectorIntere").style.opacity="100%";
       break;
     case 1:
-      document.getElementById("selectorIntere").style.top="17.1vw";
+      document.getElementById("selectorIntere").style.top="12.1vw";
       document.getElementById("selectorIntere").style.opacity="100%";
       break;
     case 2:
-      document.getElementById("selectorIntere").style.top="20.1vw";
+      document.getElementById("selectorIntere").style.top="15.1vw";
       document.getElementById("selectorIntere").style.opacity="100%";
       break;
     case 3:
-      document.getElementById("selectorIntere").style.top="23.1vw";
+      document.getElementById("selectorIntere").style.top="18.1vw";
       document.getElementById("selectorIntere").style.opacity="100%";
       break;
     case 4:
@@ -271,13 +277,13 @@ function multimediaSwap(whichisit) {
       vid.setAttribute('src', 'https://ia801505.us.archive.org/23/items/lets-play-hollow-knight-gameplay-walkthrough-no-commentary-episode-1_202209/Let%27s%20Play%20-%20Hollow%20Knight%20Gameplay%20Walkthrough%20No%20Commentary%20-%20Episode%201.mp4');
       break;
     case 1:
-      vid.setAttribute('src', 'https://ia601405.us.archive.org/1/items/portal_202209/portal.mp4');
+      vid.setAttribute('src', 'https://ia601409.us.archive.org/35/items/making-of-ass/Making%20of%20ASS.mp4');
       break;
     case 2:
       vid.setAttribute('src', 'https://ia601406.us.archive.org/4/items/celeste_202209/celeste.mp4');
       break;
     case 3:
-      vid.setAttribute('src', 'https://ia601506.us.archive.org/17/items/no-mans-sky/no%20mans%20sky.mp4');
+      vid.setAttribute('src', 'https://ia601402.us.archive.org/18/items/cookmanisa/cookmanisa.mp4');
       break;
   }
 
@@ -301,16 +307,16 @@ function multimediaSwap(whichisit) {
 
   switch (whichisit){
     case 0:
-      document.getElementById("videoTitle").innerHTML = "Hollow Knight";
+      document.getElementById("videoTitle").innerHTML = "Review of Hollow Knight";
       break;
     case 1:
-      document.getElementById("videoTitle").innerHTML = "Portal";
+      document.getElementById("videoTitle").innerHTML = "Making of ASS";
       break;
     case 2:
-      document.getElementById("videoTitle").innerHTML = "Celeste";
+      document.getElementById("videoTitle").innerHTML = "Review of Celeste";
       break;
     case 3:
-      document.getElementById("videoTitle").innerHTML = "No Man's Sky";
+      document.getElementById("videoTitle").innerHTML = "Making of CookMania";
       break;
   }
 }
@@ -367,7 +373,9 @@ function multimediaVideos(){
     
     newDiv.appendChild(newPee);
   }
-
+  if (videos.length%2!=0 && check==false) {
+    heightMult=heightMult+25;
+  }
   document.getElementById("reallybigline").style.height=(heightMult-10)+"vw";
   document.getElementById("generateVid").style.height=(heightMult+10)+"vw";
   document.getElementById("footer5").style.top=(heightMult+58)+"vw";
